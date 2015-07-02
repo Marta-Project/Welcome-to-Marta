@@ -12,6 +12,8 @@ nav {
       display: inline; }
       nav ul li a {
         text-decoration: none; }
+        nav ul li a button {
+          border-radius: 5%; }
       nav ul li a:visited {
         color: blue; }
 
