@@ -1,6 +1,6 @@
-## Welcome to My Angular Project
+## Welcome to the Marta Realtime rail tracking app
 
-> I am your Readme.md file, you should probably update me.
+> This app will be able to track the Marta rail times in realtime, with a focus on the north-south lines!
 
 
 ## Usage
