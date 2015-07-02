@@ -1,9 +1,11 @@
+header {
+  background-color: #1E4064;
+  border-bottom: 2px solid black; }
+
 nav {
   height: 55px;
   padding-right: 100px;
-  padding-left: 100px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black; }
+  padding-left: 100px; }
   nav ul {
     float: right; }
     nav ul li {
@@ -30,4 +32,6 @@ h1 {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #1E4064;
+  border: 2px solid black; }
