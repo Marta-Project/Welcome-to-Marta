@@ -23,3 +23,11 @@ nav {
   background-color: #d6d6d6;
   min-width: 500px;
   text-align: justify; }
+
+h1 {
+  text-align: center; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
