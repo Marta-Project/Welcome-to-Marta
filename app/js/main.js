@@ -9,22 +9,22 @@
     $routeProvider
 
     .when('/', {
-      templateUrl: '/dashboard/dashboard.tpl.html',
+      templateUrl: 'js/dashboard/dashboard.tpl.html',
       controller: 'DashBoard'
     })
 
     .when('/about', {
-      templateUrl: '/about/about.tpl.html',
+      templateUrl: 'js/about/about.tpl.html',
       controller: 'About'
     })
 
     .when('/contact', {
-      templateUrl: '/contact/contact.tpl.html',
+      templateUrl: 'js/contact/contact.tpl.html',
       controller: 'Contact'
     })
 
     .when('/trains', {
-      templateUrl: '/trains/trains.tpl.html',
+      templateUrl: 'js/trains/trains.tpl.html',
       controller:   'Trains'
      });
     
