@@ -1,0 +1,33 @@
+nav {
+  height: 55px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+  nav ul {
+    float: right; }
+    nav ul li {
+      text-decoration: none;
+      cursor: pointer;
+      display: inline; }
+      nav ul li a {
+        text-decoration: none; }
+        nav ul li a button {
+          border-radius: 5%; }
+      nav ul li a:visited {
+        color: blue; }
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #d6d6d6;
+  min-width: 500px;
+  text-align: justify; }
+
+h1 {
+  text-align: center; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }

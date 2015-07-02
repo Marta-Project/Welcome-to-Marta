@@ -1,0 +1,63 @@
+//Color Variables
+$background: #d6d6d6;
+
+
+//Global Elements
+
+//Main Page Style
+
+//Header
+nav{
+  height: 55px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+
+ul {
+  float: right;
+  li {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+
+    a {
+      text-decoration: none;
+
+      button{
+        border-radius: 5%;
+      }
+
+    }
+    a:visited {
+      color: blue;
+    }
+  }
+ }
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: $background;
+  min-width: 500px;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+//About Page Style
+
+//DashBoard Style
+
+//Contact Style
+
+//Trains Style
+
