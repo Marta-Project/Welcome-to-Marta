@@ -26,7 +26,13 @@
     .when('/trains', {
       templateUrl: 'js/trains/trains.tpl.html',
       controller:   'Trains'
-     });
+     })
+
+    .when('/buses', {
+      templateUrl: 'js/buses/bus.tpl.html',
+      controller: 'Buses'
+
+    });
     
   });
 
