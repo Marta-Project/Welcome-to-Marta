@@ -43,3 +43,27 @@ footer {
 button.BPbut {
   width: 100px;
   height: 60px; }
+
+#login_container h1 {
+  text-align: center;
+  font-size: 2em; }
+
+#login_container form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  #login_container form .input1 {
+    height: 25px;
+    width: 300px;
+    display: inline;
+    margin: 20px; }
+  #login_container form .input2 {
+    height: 25px;
+    width: 300px;
+    display: inline;
+    margin: 20px; }
+  #login_container form .LGbutton {
+    clear: both;
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px 20px 20px; }

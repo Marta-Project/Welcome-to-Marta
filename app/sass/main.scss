@@ -86,8 +86,46 @@ button.BPbut {
 
 
 
-
-
-
 //Trains Style
+
+//Login Style
+
+#login_container {
+
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .input1 {
+      // float: left;
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px;
+    }
+    .input2 {
+      // float: left;
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px;
+    }
+    .LGbutton {
+      clear: both;
+      display: inline-block;
+      width: 300px;
+      // float: left;
+      margin: 0 20px 20px 20px;
+    }
+  }
+}
+
+//Registration Style
 
