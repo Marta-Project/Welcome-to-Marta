@@ -1,6 +1,9 @@
 //Color Variables
 $background: #d6d6d6;
 $navBarColors: #1E4064;
+$invalid: #E95151;
+$valid: #6DE7A3;
+$buttonColors:#F6F6F6;
 
 
 //Global Elements
@@ -129,3 +132,37 @@ button.BPbut {
 
 //Registration Style
 
+#registration_page {
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+form {
+  text-align: justify;
+
+  input {
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+}
+  .RPEmail:valid {
+    background-color: $valid;
+  }
+  .RPEmail:invalid {
+    background-color: $invalid;
+  }
+
+  .RPSub {
+    display: block;
+    clear: both;
+    color: $buttonColors;
+    background-color: $navBarColors;
+  }
+
+}
