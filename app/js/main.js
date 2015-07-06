@@ -32,8 +32,18 @@
       templateUrl: 'js/buses/bus.tpl.html',
       controller: 'Buses'
 
+    })
+
+    .when('/register', {
+      templateUrl: 'js/registration/registration.tpl.html',
+      controller: 'Registration'
+    })
+
+    .when('/login', {
+      templateUrl: 'js/login/login.tpl.html',
+      controller: 'Login'
     });
-    
+
   });
 
 
