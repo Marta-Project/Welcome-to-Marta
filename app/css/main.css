@@ -35,3 +35,11 @@ footer {
   width: 100%;
   background-color: #1E4064;
   border: 2px solid black; }
+
+.CPh1 input {
+  width: 300px;
+  height: 300px; }
+
+button.BPbut {
+  width: 100px;
+  height: 60px; }
