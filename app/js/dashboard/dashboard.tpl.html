@@ -1,6 +1,23 @@
-<h1 class='DBh1'>Welcome to the Marta Real-time tracking app</h1>
+<div id="dashboard_page">
+  <h1>Welcome {{ user }}</h1>
 
-<ul class='DBul'><p class='DBp'>Which train would you take?</p>
-	<li class='DBli'>Northbound</li>
-	<li class='DBli'>Southbound</li>
-</ul>
+  <div class="DBtrips">
+  <h3 class="DByourTrips">Your Trips:</h3>
+    <div class="DBTripContent">
+      <ul>
+        <li ng-repeat><a href="#">{{ myTrips }}</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="DBNewTrips">
+
+
+  </div>
+
+  <div class="DBBanner">
+    <img src="#">
+  </div>
+
+</div>
