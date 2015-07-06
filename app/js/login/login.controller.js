@@ -4,10 +4,9 @@
 
   angular.module('marta')
 
-  .controller('Contact', ['$scope', '$http',
+  .controller('Login', ['$scope', '$http',
 
     function ($scope, $http){
-
 
 
 

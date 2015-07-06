@@ -4,16 +4,15 @@
 
   angular.module('marta')
 
-  .controller('Contact', ['$scope', '$http',
+  .controller('Registration', ['$scope', '$http',
 
     function ($scope, $http){
 
 
 
 
-
-
     }
     ]);
+
 
 }());

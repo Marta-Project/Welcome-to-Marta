@@ -4,7 +4,7 @@
 
   angular.module('marta')
 
-  .controller('Contact', ['$scope', '$http',
+  .controller('Buses', ['$scope', '$http',
 
     function ($scope, $http){
 
