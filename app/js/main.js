@@ -1,17 +1,22 @@
 ;(function (){
   'use strict';
 
-  angular.module('marta', ['ngRoute'])
+  angular.module('marta', ['ngRoute', 'ngCookies'])
 
   //.constant and headers will go here
-
-  $.ajaxSetup({
+  // connecting to PARSE for user registration
+.constant('PARSE', {
+  URL: 'https://api.parse.com/1/',
+  CONFIG: {
     headers: {
+
       'X-Parse-Application-Id' : 'K7jTulq7a3XXqlt7ErUOe6cbMIArbi3Mo7em6DnL',
       'X-Parse-REST-API-Key' : 'aLrB1N3xxuPQrE3DBEM1zkzXzceZmUQfxMygdaqh'
-    }
 
-  });
+    }
+  }
+})
+
 
   .config(function ($routeProvider) {
     $routeProvider

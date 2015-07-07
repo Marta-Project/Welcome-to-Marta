@@ -21,10 +21,14 @@
     "normalize.css": "~3.0.3",
     "angular": "~1.4.1",
     "angular-material": "~0.10.0",
-    "Cookies": "~1.2.1"
+    "Cookies": "~1.2.1",
+    "angular-cookies": "~1.4.2"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
     "chai": "~3.0.0"
+  },
+  "resolutions": {
+    "angular": "~1.4.1"
   }
 }
