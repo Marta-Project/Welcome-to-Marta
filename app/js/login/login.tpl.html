@@ -1,11 +1,11 @@
 <div id="login_container">
 
-<h1>Login Sample</h1>
+<h1>Login</h1>
 
-<form>
-  <input type='text' placeholder='enter username' class ='input1'>
-  <input type='text' placeholder='enter password' class='input2'>
-  <input type='submit' class="LGbutton">
+<form ng-submit="login(user)">
+  <input type='text' placeholder='enter username' class ='input1' ng-model="user.userName">
+  <input type='password' placeholder='enter password' class='input2' ng-model="user.password">
+  <button>Login</button>
 </form>
 
 

@@ -26,7 +26,7 @@
         $cookies.put('sessionToken', data.sessionToken);
         $cookies.put('username', data.username);
 
-        $location.path('#/');
+        $location.path('/');
 
         $scope.registration = {};
       });

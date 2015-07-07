@@ -8,7 +8,7 @@
 
     function ($scope, $http, PARSE, $cookies ){
 
-      $scope.user = $http.get(PARSE.URL + 'users/me', $cookies.get('sessionToken'), PARSE.CONFIG);
+      // $scope.user = $http.get(PARSE.URL + 'users/me', $cookies.get('sessionToken'), PARSE.CONFIG);
 
 
 
