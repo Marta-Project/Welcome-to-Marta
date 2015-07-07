@@ -20,6 +20,7 @@
 
         removeSessionToken();
         removeUserName();
+        $location.path('/login');
 
 
 
