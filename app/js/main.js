@@ -22,8 +22,8 @@
     $routeProvider
 
     .when('/', {
-      templateUrl: 'js/dashboard/dashboard.tpl.html'
-      // controller: 'Dashboard'
+      templateUrl: 'js/dashboard/dashboard.tpl.html',
+      controller: 'Dashboard'
     })
 
     .when('/about', {
