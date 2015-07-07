@@ -15,14 +15,14 @@
 //sends the login request to Parse
 
       $scope.login = function (user) {
-        $http.get(PARSE.URL + 'login', user, PARSE.CONFIG.headers).success ( function (ll){
+        $http.get(PARSE.URL + 'login?username=' + user.userName + '&password=' + user.password, PARSE.CONFIG).success ( function (ll){
 
-//           $cookies.put('sessionToken', ll.sessionToken);
-//           $cookies.put('username', ll.username);
-// //redirects to homepage on success
-//           $location.path('/');
-// //defines user as a object
-//           $scope.user = {};
+          $cookies.put('sessionToken', ll.sessionToken);
+          $cookies.put('username', ll.username);
+//redirects to homepage on success
+          $location.path('/');
+//defines user as a object
+          $scope.user = {};
 
         });
       };
