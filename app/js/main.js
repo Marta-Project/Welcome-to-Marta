@@ -23,7 +23,7 @@
 
     .when('/', {
       templateUrl: 'js/dashboard/dashboard.tpl.html',
-      controller: 'DashBoard'
+      controller: 'Dashboard'
     })
 
     .when('/about', {
