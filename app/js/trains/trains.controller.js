@@ -21,7 +21,7 @@
         $( "<ul/>", {
           "class": "my-new-list",
           html: items.join( "" )
-        }).appendTo( "body" );
+        }).appendTo( "#traintest" );
       });
 
 
