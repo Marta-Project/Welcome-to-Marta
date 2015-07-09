@@ -4,9 +4,9 @@
 
   angular.module('marta')
 
-  .controller('Trains', ['$scope', '$http',
+  .controller('Trains', ['$scope', '$http', 'MARTA',
 
-    function ($scope, $http){
+    function ($scope, $http, MARTA){
 
 
 
