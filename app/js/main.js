@@ -18,16 +18,16 @@
 })
 
 
-.constant('MARTA', {
-  URL: 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?',
-  CONFIG: {
-    headers: {
+// .constant('MARTA', {
+//   URL: 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?',
+//   CONFIG: {
+//     headers: {
 
-      'apiKey' : '72f588d5-9412-4a89-8d83-0ef58e91cac1',
+//       'apiKey' : '72f588d5-9412-4a89-8d83-0ef58e91cac1',
 
-    }
-  }
-})
+//     }
+//   }
+// })
 
 
 //marta api key : http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?apiKey=72f588d5-9412-4a89-8d83-0ef58e91cac1
