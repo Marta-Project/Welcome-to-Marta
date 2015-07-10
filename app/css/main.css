@@ -36,6 +36,37 @@ footer {
   background-color: #1E4064;
   border: 2px solid black; }
 
+.bobby {
+  display: inline;
+  float: left; }
+
+.bobby img {
+  width: 227px; }
+
+.bobby h4 img {
+  width: 50px; }
+
+.chris {
+  margin-left: 650px; }
+
+.chris img {
+  width: 300px; }
+
+.chris h4 img {
+  width: 50px; }
+
+.phonePic h4 {
+  float: right;
+  margin-top: -200px;
+  margin-right: 192px; }
+
+.phonePic img {
+  float: right; }
+
+button.BPbut {
+  width: 100px;
+  height: 60px; }
+
 .CPh1 input {
   width: 300px;
   height: 300px; }

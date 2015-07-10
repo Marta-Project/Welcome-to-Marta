@@ -1,7 +1,7 @@
 ;(function (){
   'use strict';
 
-  angular.module('marta', ['ngRoute', 'ngCookies'])
+  angular.module('marta', ['ngRoute', 'ngCookies', 'ngModal'])
 
   //.constant and headers will go here
   // connecting to PARSE for user registration
