@@ -10,6 +10,18 @@ $buttonColors:#F6F6F6;
 
 //Main Page Style
 
+//Trains
+.TPNorth {
+  float: left;
+  display: inline;
+}
+
+.TPSouth {
+  float: right;
+  display: inline;
+}
+
+
 //Header
 header {
   background-color: $navBarColors;

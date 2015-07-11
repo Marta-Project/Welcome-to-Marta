@@ -1,3 +1,11 @@
+.TPNorth {
+  float: left;
+  display: inline; }
+
+.TPSouth {
+  float: right;
+  display: inline; }
+
 header {
   background-color: #1E4064;
   border-bottom: 2px solid black; }
