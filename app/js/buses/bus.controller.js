@@ -1,34 +1,35 @@
 ;(function (){
 
-  'use strict';
+'use strict';
 
   angular.module('marta')
 
   .controller('Buses', ['$scope', '$http',
 
-    function ($scope, $http){
+    function($scope, $http){
 
-    $http.get('https://jsonp.afeld.me/?url=http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus')
+        $scope.northBus = [];
+        $scope.southBus = [];
 
+        $http
+          .get('https://jsonp.afeld.me/?url=http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus')
+          .success( function (data){
+            console.log(data);
+            $scope.buses = data;
+            angular.forEach($scope.buses, function(bus){
+              if( bus.DIRECTION === "Northbound") {
+                $scope.northBus.push(bus);
+              }
+              else if ( bus.DIRECTION === "Southbound"){
+                $scope.southBus.push(bus);
+              }
+            });
 
-}
-var busEndpoint = 'http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus';
-
-
-      $.getJSON( busEndpoint, function( data ) {
-        var items = [];
-        $.each( data, function( name, item ) {
-          items.push( "<li id='" + name + "'>" + item + "</li>" );
-        });
-
-        $( "<ul/>", {
-          "class": "my-new-list",
-          html: items.join( "" )
-        }).appendTo( "#traintest" );
-      });
-
-
+          });
+    }
 
     ]);
+
+
 
 }());

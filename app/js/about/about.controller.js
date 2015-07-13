@@ -14,7 +14,7 @@
        };
       $scope.toggleChrisModal = function() {
         $scope.chrisDialogShown = !$scope.chrisDialogShown;
-      }
+      };
 
 
 
