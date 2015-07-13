@@ -3,7 +3,15 @@
 <h1 class='TPh1'>Which Train would you like to board?</h1>
 <p class="TPNorth">
 
-  North Trains: {{ trains }}
+  North Trains:
+
+<ul>
+<br><br>
+
+  <li ng-repeat="DESTINATION in trains">{{ trains.STATION }}</li>
+
+</ul>
+
 
 </p>
 <p class="TPSouth">
