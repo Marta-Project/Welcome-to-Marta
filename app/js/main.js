@@ -19,7 +19,7 @@
 
 
 // .constant('MARTA', {
-//   URL: 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?',
+//   URL: 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals',
 //   CONFIG: {
 //     headers: {
 
