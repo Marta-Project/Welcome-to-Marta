@@ -9,7 +9,12 @@
     function ($scope, $http){
 
 
-
+      $scope.toggleModal = function() {
+        $scope.dialogShown = !$scope.dialogShown;
+       };
+      $scope.toggleChrisModal = function() {
+        $scope.chrisDialogShown = !$scope.chrisDialogShown;
+      };
 
 
 

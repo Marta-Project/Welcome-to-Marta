@@ -23,7 +23,11 @@
     "angular-material": "~0.10.0",
     "Cookies": "~1.2.1",
     "angular-cookies": "~1.4.2",
+<<<<<<< HEAD
     "jsonproxy": "~0.3.1"
+=======
+    "ngModal": "~1.2.0"
+>>>>>>> chris-dev
   },
   "devDependencies": {
     "mocha": "~2.2.5",

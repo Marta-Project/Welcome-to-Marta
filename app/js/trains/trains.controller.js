@@ -8,6 +8,7 @@
 
     function ($scope, $http){
 
+
     $scope.northTrainsRed = [];
     $scope.northTrainsGold = [];
     $scope.southTrains = [];
@@ -38,12 +39,6 @@
     console.error(err);
    });
 
-
-
-
-    // $scope.test2 = testing.filter( function(item){
-    //   return item.DIRECTION === "N";
-    //  });
     }
     ]);
 

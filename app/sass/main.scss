@@ -76,11 +76,41 @@ footer {
   border: 2px solid black;
 }
 //About Page Style
+.bobby {
+  display: inline;
+  float: left; }
+
+.bobby img {
+  width: 227px; }
+
+.bobby h4 img {
+  width: 50px; }
+
+.chris {
+  margin-left: 650px; }
+
+.chris img {
+  width: 300px; }
+
+.chris h4 img {
+  width: 50px; }
 
 
 //DashBoard Style
 
 //Contact Style
+.phonePic h4 {
+  float: right;
+  margin-top: -200px;
+  margin-right: 192px; }
+
+.phonePic img {
+  float: right; }
+
+button.BPbut {
+  width: 100px;
+  height: 60px; }
+
 
  .CPh1 input {
   width: 300px;
