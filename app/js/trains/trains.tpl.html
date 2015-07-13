@@ -3,19 +3,24 @@
 <h1 class='TPh1'>Which Train would you like to board?</h1>
 <p class="TPNorth">
 
-  North Trains:
-
-<ul>
-<br><br>
-
-  <li ng-repeat="DESTINATION in trains">{{ trains.STATION }}</li>
-
-</ul>
-
-
+  North Trains Red Line:
+  <ol>
+  <br><br><br>
+    <li ng-repeat="train in northTrainsRed"> {{ train.STATION }}</li>
+  </ol>
+  North Trains Gold Line:
+   <ol>
+      <br><br><br>
+        <li ng-repeat="train in northTrainsGold"> {{ train.STATION }}</li>
+  </ol>
 </p>
 <p class="TPSouth">
-  South Trains: {{ south }}
+  South Trains:
+
+  <ol>
+    <br><br><br>
+      <!-- <li ng-repeat="DIRECTION in trains">{{ trains }}</li> -->
+  </ol>
 </p>
 
 

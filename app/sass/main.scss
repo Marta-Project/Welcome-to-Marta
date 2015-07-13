@@ -146,6 +146,8 @@ button.BPbut {
 
 #registration_page {
 
+  height: 450px;
+
   h1 {
     text-align: center;
     font-size: 2em;
@@ -177,4 +179,10 @@ form {
     background-color: $navBarColors;
   }
 
+}
+
+//Login Page
+
+#login_container {
+  height: 450px;
 }
