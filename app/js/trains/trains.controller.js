@@ -9,8 +9,8 @@
     function ($scope, $http){
 
 
-    $scope.northTrainsRed = [];
-    $scope.northTrainsGold = [];
+    $scope.northTrains = [];
+    // $scope.northTrainsGold = [];
     $scope.southTrains = [];
 
   $http
@@ -19,15 +19,15 @@
       console.log(data);
       $scope.trains = data;
       angular.forEach($scope.trains, function (train){
-        if( train.DIRECTION === "N" && train.LINE === "RED") {
-          $scope.northTrainsRed.push(train);
+        if( train.DIRECTION === "N") {
+          $scope.northTrains.push(train);
         }
         else if( train.DIRECTION === "S"){
           $scope.southTrains.push(train);
         }
-        else if( train.DIRECTION === "N" && train.LINE === "GOLD") {
-          $scope.northTrainsGold.push(train);
-        }
+        // else if( train.DIRECTION === "N" && train.LINE === "GOLD") {
+        //   $scope.northTrainsGold.push(train);
+        // }
 
 
       });

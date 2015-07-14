@@ -12,29 +12,14 @@
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
-      <tr ng-repeat="train in northTrainsRed | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText">
+      <tr ng-repeat="train in northTrains | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText">
         <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
         <td class="waiting">{{ train.WAITING_TIME }}</td>
         <td>{{ train.LINE }}</td>
         <td>{{ train.DESTINATION }}</td>
     </table>
-    <table>
-    <caption>North Gold Line Trains</caption>
-      <tr>
-        <th class="station">Current Station</th>
-        <th>Next Arrival</th>
-        <th>Waiting Time</th>
-        <th>Line</th>
-        <th>Final Destination</th>
-      </tr>
-      <tr ng-repeat="train in northTrainsGold | orderBy: ['STATION', 'NEXT_ARR']">
-        <td class="station">{{ train.STATION }}</td>
-        <td>{{ train.NEXT_ARR }}</td>
-        <td>{{ train.WAITING_TIME }}</td>
-        <td>{{ train.LINE }}</td>
-        <td>{{ train.DESTINATION }}</td>
-    </table>
+    <label>Search by Station: <input ng-model="searchText2"></label><br>
     <table>
     <caption>Southbound Trains</caption>
       <tr>
@@ -44,7 +29,7 @@
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
-      <tr ng-repeat="train in southTrains | orderBy: ['STATION', 'NEXT_ARR']">
+      <tr ng-repeat="train in southTrains | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText2" >
         <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
         <td>{{ train.WAITING_TIME }}</td>
