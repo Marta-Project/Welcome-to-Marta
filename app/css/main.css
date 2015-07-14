@@ -40,8 +40,8 @@ nav {
         color: blue; }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #d6d6d6;
   min-width: 500px;
   text-align: justify; }
