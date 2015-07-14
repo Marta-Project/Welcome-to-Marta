@@ -14,6 +14,13 @@ $table: #F6F6F6;
 
 //Trains
 #trains_page {
+  .TPH1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+  }
+
 
 
   table {
@@ -79,10 +86,10 @@ header {
 
 
 .container {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
   background-color: $background;
-  min-width: 500px;
+  width: 1042px;
   text-align: justify;
 }
 

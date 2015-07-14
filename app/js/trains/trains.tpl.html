@@ -1,8 +1,8 @@
 
 <div id="trains_page" ng-controller="Trains">
 
-  <h1 class='TPh1'>Which Train would you like to board?</h1>
-  <label>Search by Station: <input ng-model="searchText"></label>
+<h2>Which Train Would You Like To Board?</h2>
+  <label>Search by Station: <input ng-model="searchText" placeholder="Enter Station Name"></label>
   <button ng-click="refresh()">Refresh</button><br>
     <table class="trainTable">
     <caption>North Red Line Trains</caption>
@@ -21,7 +21,7 @@
         <td>{{ train.DESTINATION }}</td>
     </table>
     <br><br><br>
-    <label>Search by Station: <input ng-model="searchText2"></label><br>
+    <label>Search by Station: <input ng-model="searchText2" placeholder="Enter Station Name"></label><br>
     <table>
     <caption>Southbound Trains</caption>
       <tr>
