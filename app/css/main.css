@@ -1,10 +1,6 @@
-.TPNorth {
-  float: left;
-  display: inline; }
-
-.TPSouth {
-  float: right;
-  display: inline; }
+table {
+  display: inline;
+  float: left; }
 
 header {
   background-color: #1E4064;
@@ -42,7 +38,8 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #1E4064;
-  border: 2px solid black; }
+  border: 2px solid black;
+  clear: both; }
 
 .bobby {
   display: inline;

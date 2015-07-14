@@ -11,14 +11,9 @@ $buttonColors:#F6F6F6;
 //Main Page Style
 
 //Trains
-.TPNorth {
+table {
+  display: inline;
   float: left;
-  display: inline;
-}
-
-.TPSouth {
-  float: right;
-  display: inline;
 }
 
 
@@ -74,6 +69,7 @@ footer {
   width: 100%;
   background-color: $navBarColors;
   border: 2px solid black;
+  clear: both;
 }
 //About Page Style
 .bobby {
