@@ -4,6 +4,7 @@ $navBarColors: #1E4064;
 $invalid: #E95151;
 $valid: #6DE7A3;
 $buttonColors:#F6F6F6;
+$table: #F6F6F6;
 
 
 //Global Elements
@@ -11,9 +12,33 @@ $buttonColors:#F6F6F6;
 //Main Page Style
 
 //Trains
-table {
-  display: inline;
-  float: left;
+#trains_page {
+
+
+  table {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: 4px;
+
+    th {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .station {
+      text-align: left;
+    }
+    .waiting {
+      text-align: right;
+    }
+    td {
+      text-align: center;
+      padding: 5px;
+      border: 1px solid black;
+    }
+  }
 }
 
 

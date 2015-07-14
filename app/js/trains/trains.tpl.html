@@ -3,42 +3,51 @@
 
   <h1 class='TPh1'>Which Train would you like to board?</h1>
 
-    <table>
+    <table class="trainTable">
+    <caption>North Red Line Trains</caption>
       <tr>
         <th>Current Station</th>
         <th>Next Arrival</th>
+        <th>Waiting Time</th>
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
       <tr ng-repeat="train in northTrainsRed">
-        <td>{{ train.STATION }}</td>
+        <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
+        <td class="waiting">{{ train.WAITING_TIME }}</td>
         <td>{{ train.LINE }}</td>
         <td>{{ train.DESTINATION }}</td>
     </table>
     <table>
+    <caption>North Gold Line Trains</caption>
       <tr>
-        <th>Current Station</th>
+        <th class="station">Current Station</th>
         <th>Next Arrival</th>
+        <th>Waiting Time</th>
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
       <tr ng-repeat="train in northTrainsGold">
-        <td>{{ train.STATION }}</td>
+        <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
+        <td>{{ train.WAITING_TIME }}</td>
         <td>{{ train.LINE }}</td>
         <td>{{ train.DESTINATION }}</td>
     </table>
     <table>
+    <caption>Southbound Trains</caption>
       <tr>
         <th>Current Station</th>
         <th>Next Arrival</th>
+        <th>Waiting Time</th>
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
       <tr ng-repeat="train in southTrains">
-        <td>{{ train.STATION }}</td>
+        <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
+        <td>{{ train.WAITING_TIME }}</td>
         <td>{{ train.LINE }}</td>
         <td>{{ train.DESTINATION }}</td>
     </table>

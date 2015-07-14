@@ -1,6 +1,21 @@
-table {
+#trains_page table {
   display: inline;
-  float: left; }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 4px; }
+  #trains_page table th {
+    margin-left: 10px;
+    margin-right: 10px; }
+  #trains_page table .station {
+    text-align: left; }
+  #trains_page table .waiting {
+    text-align: right; }
+  #trains_page table td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black; }
 
 header {
   background-color: #1E4064;
