@@ -12,7 +12,7 @@
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
-      <tr ng-repeat="train in northTrainsRed">
+      <tr ng-repeat="train in northTrainsRed | orderBy: '-STATION'">
         <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
         <td class="waiting">{{ train.WAITING_TIME }}</td>
@@ -28,7 +28,7 @@
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
-      <tr ng-repeat="train in northTrainsGold">
+      <tr ng-repeat="train in northTrainsGold | orderBy: '-STATION'">
         <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
         <td>{{ train.WAITING_TIME }}</td>
@@ -44,7 +44,7 @@
         <th>Line</th>
         <th>Final Destination</th>
       </tr>
-      <tr ng-repeat="train in southTrains">
+      <tr ng-repeat="train in southTrains | orderBy: '-STATION'">
         <td class="station">{{ train.STATION }}</td>
         <td>{{ train.NEXT_ARR }}</td>
         <td>{{ train.WAITING_TIME }}</td>
