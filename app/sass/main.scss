@@ -43,6 +43,36 @@ $table: #F6F6F6;
   }
 }
 
+//Buses
+#bus_page {
+
+
+  table {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: 4px;
+
+    th {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .station {
+      text-align: left;
+    }
+    .waiting {
+      text-align: right;
+    }
+    td {
+      text-align: center;
+      padding: 5px;
+      border: 1px solid black;
+      background-color: $table;
+    }
+  }
+}
 
 //Header
 header {
@@ -155,6 +185,8 @@ button.BPbut {
 
 
 //Trains Style
+
+
 
 //Login Style
 

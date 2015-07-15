@@ -1,19 +1,46 @@
 <div id="bus_page" ng-controller="Buses">
 
-<h1 class='TPh1'>Sample Bus Page</h1>
+
 
 </div>
-<div id="bustest">
-
-North Buses:
-<ol><br><br><br>
-<li ng-repeat="bus in northBus">{{ bus.ROUTE }}</li>
-</ol>
-
-South Buses:
-<ol><br><br><br>
-<li ng-repeat="bus in southBus">{{ bus.ROUTE }}</li>
-</ol>
+<h1 class='TPh1'>Which Bus would you like to board?</h1>
+  <label>Search by Station: <input ng-model="searchText"></label>
+  <button ng-click="refresh()">Refresh</button><br>
+    <table class="busTable">
+    <caption>Northbound Buses</caption>
+      <tr>
+        <th>Current Location</th>
+        <th>Next Arrival</th>
+        <th>Waiting Time</th>
+        <th>Route</th>
+        <th>Direction</th>
+      </tr>
+      <tr ng-repeat="bus in northBus| orderBy: ['TIMEPOINT', 'ADHERENCE'] | filter: searchText">
+        <td class="station">{{ bus.TIMEPOINT }}</td>
+        <td>{{ bus.ADHERENCE }}</td>
+        <td class="waiting">{{ bus.STOPID }}</td>
+        <td>{{ bus.ROUTE }}</td>
+        <td>{{ bus.DIRECTION }}</td>
+    </table>
+    <br><br><br>
+    <label>Search by Station: <input ng-model="searchText2"></label><br>
+    <table>
+    <caption>Southbound Buses</caption>
+      <tr>
+        <th>Current Location</th>
+        <th>Next Arrival</th>
+        <th>Waiting Time</th>
+        <th>Line</th>
+        <th>Direction</th>
+      </tr>
+      <tr ng-repeat="bus in southBus| orderBy: ['TIMEPOINT', 'ADHERENCE'] | filter: searchText2" >
+        <td class="station">{{ bus.TIMEPOINT }}</td>
+        <td>{{ bus.ADHERENCE }}</td>
+        <td>{{ bus.STOPID }}</td>
+        <td>{{ bus.ROUTE }}</td>
+        <td>{{ bus.DIRECTION }}</td>
+    </table>
+</div>
 
 
 </div>
