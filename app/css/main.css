@@ -28,9 +28,9 @@
   #bus_page table th {
     margin-left: 10px;
     margin-right: 10px; }
-  #bus_page table .station {
+  #bus_page table .location {
     text-align: left; }
-  #bus_page table .waiting {
+  #bus_page table .vehicle {
     text-align: right; }
   #bus_page table td {
     text-align: center;

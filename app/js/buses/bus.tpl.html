@@ -2,41 +2,41 @@
 
 
 
-</div>
-<h1 class='TPh1'>Which Bus would you like to board?</h1>
-  <label>Search by Station: <input ng-model="searchText"></label>
+<!-- </div>
+ --><h1 class='TPh1'>Which Bus would you like to board?</h1>
+  <label>Search by Location: <input ng-model="searchText"></label>
   <button ng-click="refresh()">Refresh</button><br>
     <table class="busTable">
     <caption>Northbound Buses</caption>
       <tr>
         <th>Current Location</th>
         <th>Next Arrival</th>
-        <th>Waiting Time</th>
+        <th>Vehicle Number</th>
         <th>Route</th>
         <th>Direction</th>
       </tr>
-      <tr ng-repeat="bus in northBus| orderBy: ['TIMEPOINT', 'ADHERENCE'] | filter: searchText">
-        <td class="station">{{ bus.TIMEPOINT }}</td>
+      <tr ng-repeat="bus in northBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText">
+        <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }}</td>
-        <td class="waiting">{{ bus.STOPID }}</td>
+        <td class="vehicle">{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
     </table>
     <br><br><br>
-    <label>Search by Station: <input ng-model="searchText2"></label><br>
+    <label>Search by Location: <input ng-model="searchText2"></label><br>
     <table>
     <caption>Southbound Buses</caption>
       <tr>
         <th>Current Location</th>
         <th>Next Arrival</th>
-        <th>Waiting Time</th>
-        <th>Line</th>
+        <th>Vehicle Number</th>
+        <th>Route</th>
         <th>Direction</th>
       </tr>
-      <tr ng-repeat="bus in southBus| orderBy: ['TIMEPOINT', 'ADHERENCE'] | filter: searchText2" >
-        <td class="station">{{ bus.TIMEPOINT }}</td>
+      <tr ng-repeat="bus in southBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText2" >
+        <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }}</td>
-        <td>{{ bus.STOPID }}</td>
+        <td>{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
     </table>
