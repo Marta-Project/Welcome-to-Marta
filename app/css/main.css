@@ -1,15 +1,31 @@
+body {
+  width: 100%; }
+
 #trains_page .TPH1 {
   text-align: center;
   padding: 0;
   margin: 0; }
 
+#trains_page .trainTBL1 {
+  display: inline;
+  float: left; }
+
+#trains_page .trainTBL2 {
+  display: inline;
+  float: left;
+  margin-top: -54px;
+  margin-left: 25px; }
+
+#trains_page label {
+  display: inline; }
+
 #trains_page table {
   display: inline;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 15px;
-  padding: 4px; }
+  padding: 4px;
+  font-size: .67em;
+  float: left; }
   #trains_page table th {
     margin-left: 10px;
     margin-right: 10px; }
@@ -24,43 +40,40 @@
     background-color: #F6F6F6; }
 
 header {
-  background-color: #1E4064;
-  border-bottom: 2px solid black; }
+  background-color: #1D6FB1;
+  border-bottom: 2px solid black;
+  width: 100%; }
 
 nav {
   height: 55px;
   padding-right: 100px;
-  padding-left: 100px; }
+  padding-left: 100px;
+  width: 100%; }
   nav ul {
     float: right; }
     nav ul li {
       text-decoration: none;
       cursor: pointer;
-      display: inline; }
+      display: inline;
+      border-bottom-left-radius: 10px;
+      border: 2px solid black;
+      width: 25px; }
+      nav ul li li:hover {
+        width: 100px; }
       nav ul li a {
         text-decoration: none; }
-        nav ul li a button {
-          border-radius: 5%; }
       nav ul li a:visited {
-        color: blue; }
+        color: #0BA9E0; }
 
 .container {
-  padding-left: 200px;
-  padding-right: 200px;
-  background-color: #d6d6d6;
-  width: 1042px;
-  text-align: justify; }
+  background-color: #ffffff;
+  width: 100%;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px; }
 
 h1 {
   text-align: center; }
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: #1E4064;
-  border: 2px solid black;
-  clear: both; }
 
 .bobby {
   display: inline;
@@ -147,7 +160,7 @@ button.BPbut {
     display: block;
     clear: both;
     color: #F6F6F6;
-    background-color: #1E4064; }
+    background-color: #1D6FB1; }
 
 #login_container {
   height: 450px; }
