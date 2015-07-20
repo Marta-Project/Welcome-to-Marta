@@ -39,7 +39,7 @@
     background-color: #F6F6F6; }
 
 header {
-  background-color: #1E4064;
+  background-color: #90CAF9;
   border-bottom: 2px solid black; }
 
 nav {
@@ -62,7 +62,7 @@ nav {
 .container {
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #d6d6d6;
+  background-color: #9E9E9E;
   min-width: 500px;
   text-align: justify; }
 
@@ -73,7 +73,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: #1E4064;
+  background-color: #90CAF9;
   border: 2px solid black;
   clear: both; }
 
@@ -82,7 +82,7 @@ footer {
   float: left; }
 
 .bobby img {
-  width: 227px; }
+  width: 240px; }
 
 .bobby h4 img {
   width: 50px; }
@@ -91,7 +91,7 @@ footer {
   margin-left: 650px; }
 
 .chris img {
-  width: 300px; }
+  width: 160px; }
 
 .chris h4 img {
   width: 50px; }
@@ -162,7 +162,7 @@ button.BPbut {
     display: block;
     clear: both;
     color: #F6F6F6;
-    background-color: #1E4064; }
+    background-color: #90CAF9; }
 
 #login_container {
   height: 450px; }
