@@ -39,6 +39,26 @@ body {
     border: 1px solid black;
     background-color: #F6F6F6; }
 
+#bus_page table {
+  display: inline;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 4px; }
+  #bus_page table th {
+    margin-left: 10px;
+    margin-right: 10px; }
+  #bus_page table .location {
+    text-align: left; }
+  #bus_page table .vehicle {
+    text-align: right; }
+  #bus_page table td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #F6F6F6; }
+
 header {
   background-color: #1D6FB1;
   border-bottom: 2px solid black;
@@ -80,7 +100,7 @@ h1 {
   float: left; }
 
 .bobby img {
-  width: 227px; }
+  width: 240px; }
 
 .bobby h4 img {
   width: 50px; }
@@ -89,7 +109,7 @@ h1 {
   margin-left: 650px; }
 
 .chris img {
-  width: 300px; }
+  width: 160px; }
 
 .chris h4 img {
   width: 50px; }
