@@ -61,14 +61,12 @@ body {
 
 header {
   background-color: #1D6FB1;
-  border-bottom: 2px solid black;
-  width: 100%; }
+  border-bottom: 2px solid black; }
 
 nav {
   height: 55px;
   padding-right: 100px;
-  padding-left: 100px;
-  width: 100%; }
+  padding-left: 100px; }
   nav ul {
     float: right; }
     nav ul li {
