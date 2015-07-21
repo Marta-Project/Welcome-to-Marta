@@ -1,6 +1,7 @@
 //Color Variables
-$background: #9E9E9E;
-$navBarColors: #90CAF9;
+$background: #ffffff;
+$navBarColors: #1D6FB1;
+
 $invalid: #E95151;
 $valid: #6DE7A3;
 $buttonColors:#F6F6F6;
@@ -8,21 +9,42 @@ $table: #F6F6F6;
 
 
 //Global Elements
-
+body {
+  width: 100%;
+}
 //Main Page Style
 
 
 //Trains
 #trains_page {
+  .TPH1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 
+  }
+
+  .trainTBL1 {
+    display: inline;
+    float: left;
+  }
+  .trainTBL2 {
+    display: inline;
+    float: left;
+    margin-top: -54px;
+    margin-left: 25px;
+  }
+  label {
+    display: inline;
+  }
 
   table {
     display: inline;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 15px;
     padding: 4px;
+    font-size: .67em;
+    float: left;
 
     th {
       margin-left: 10px;
@@ -116,17 +138,20 @@ header {
       text-decoration: none;
       cursor: pointer;
       display: inline;
+      border-bottom-left-radius: 10px;
+      border: 2px solid black;
+      width: 25px;
+
+      li:hover {
+        width: 100px;
+      }
 
       a {
         text-decoration: none;
 
-        button{
-          border-radius: 5%;
-        }
-
       }
       a:visited {
-        color: blue;
+        color: #0BA9E0;
       }
     }
    }
@@ -134,25 +159,17 @@ header {
 
 
 .container {
-  padding-left: 25px;
-  padding-right: 25px;
   background-color: $background;
-  min-width: 500px;
+  width: 100%;
   text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 h1 {
   text-align: center;
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: $navBarColors;
-  border: 2px solid black;
-  clear: both;
-}
 //About Page Style
 .bobby {
   display: inline;
@@ -196,9 +213,7 @@ button.BPbut {
 
 
 }
-// .i {
-// background-color: blue;
-// }
+
 button.BPbut {
    width: 100px;
    height: 60px;
