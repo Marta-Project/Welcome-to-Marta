@@ -12,20 +12,32 @@
 
       $scope.sesh = $cookies.get('sessionToken');
 
+      $scope.objID = $cookies.get('objectID');
 
+      //Retrieve User Object ID
+
+      // var retrieveID = function (data) {
+      //   $http.get(PARSE.URL + 'users/me', PARSE.CONFIG).success ( function (ll){
+      //     $cookies.put('objectID', ll.objectID);
+      //   });
+      // };
+
+      // retrieveID();
+
+
+      //Log Out Current User
       $scope.logout = function () {
 
         var removeSessionToken = function () {$cookies.remove('sessionToken');};
         var removeUserName = function () {$cookies.remove('username');};
-
+        var removeObjID = function () {$cookies.remove('objectID');};
         removeSessionToken();
         removeUserName();
+        removeObjID();
         $location.path('/login');
-
-
-
       };
 
+      // Modal Setup
       $scope.favorite = function () {
         $scope.favoriteLocation = !$scope.favoriteLocation;
       };

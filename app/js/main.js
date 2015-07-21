@@ -3,8 +3,7 @@
 
   angular.module('marta', ['ngRoute', 'ngCookies', 'ngModal'])
 
-  //.constant and headers will go here
-  // connecting to PARSE for user registration
+
 .constant('PARSE', {
   URL: 'https://api.parse.com/1/',
   CONFIG: {
@@ -12,22 +11,12 @@
 
       'X-Parse-Application-Id' : 'K7jTulq7a3XXqlt7ErUOe6cbMIArbi3Mo7em6DnL',
       'X-Parse-REST-API-Key' : 'aLrB1N3xxuPQrE3DBEM1zkzXzceZmUQfxMygdaqh',
+      // 'X-Parse-Session-Token' : $cookies.get('sessionToken'),
 
     }
   }
 })
 
-
-// .constant('MARTA', {
-//   URL: 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals',
-//   CONFIG: {
-//     headers: {
-
-//       'apiKey' : '72f588d5-9412-4a89-8d83-0ef58e91cac1',
-
-//     }
-//   }
-// })
 
 
 //marta api key : http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?apiKey=72f588d5-9412-4a89-8d83-0ef58e91cac1
