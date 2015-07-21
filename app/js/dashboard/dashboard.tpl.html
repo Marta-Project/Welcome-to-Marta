@@ -6,13 +6,27 @@
   <h2> {{ sesh }}</h2>
 </div>
 <button ng-click="logout();">Logout</button>
-  <div class="DBtrips">
-  <h3 class="DByourTrips">Favorite Stations and Bus Routes:</h3>
-    <div class="DBTripContent">
-      <ul>
-        <!-- <li ng-repeat><a href="#">{{ myTrips }}</a></li> -->
-      </ul>
-    </div>
+
+
+  <div class="DBtrips"> <!-- Block for Favorite Stations -->
+    <h3 class="DByourTrips">Favorite Stations and Bus Routes: TEST</h3>
+
+      <div class="DBTripContent"> <!-- Block Focused for Favorite Trips -->
+
+      <!-- List of Favorite Locations -->
+<!--       <ul>
+        <li><button ng-click'favorite()'>Test</button></li>
+      </ul> -->
+<button ng-click'favorite()'>Test</button>
+
+      <!-- Modal Setup -->
+      <modal-dialog show='favoriteLocation' width='750px' height='60%' dialog-title='Favorite Locations'>
+
+        <p>This is a test</p>
+
+      </modal-dialog>
+
+      </div>
 
   </div>
 

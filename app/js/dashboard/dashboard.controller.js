@@ -26,6 +26,10 @@
 
       };
 
+      $scope.favorite = function () {
+        $scope.favoriteLocation = !$scope.favoriteLocation;
+      };
+
 
     }
 
