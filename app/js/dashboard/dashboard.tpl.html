@@ -4,10 +4,11 @@
 
   <h1>Welcome {{ userName }}</h1>
   <h2> {{ sesh }}</h2>
-</div>
 <button ng-click="logout();">Logout</button>
+</div>
 
 
+  <!-- Left Page Content -->
   <div class="DBtrips"> <!-- Block for Favorite Stations -->
     <h3 class="DByourTrips">Favorite Stations and Bus Routes:</h3>
 
@@ -17,7 +18,13 @@
 
   </div>
 
+
+  <!-- Right Page Content -->
   <div class="DBNewTrips">
+    <!-- List of Stations -->
+    <ol>
+      <li ng-repeat="station in stations">{{ station.Station }}</li>
+    </ol>
 
 
   </div>

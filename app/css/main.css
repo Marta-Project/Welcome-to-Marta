@@ -18,6 +18,8 @@ footer {
   height: 500px;
   margin-bottom: 15px;
   float: left; }
+  .DBtrips .DBTripContent {
+    border: 1px solid black; }
 
 #trains_page .TPH1 {
   text-align: center;
