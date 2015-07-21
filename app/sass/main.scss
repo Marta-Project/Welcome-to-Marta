@@ -44,10 +44,35 @@ $table: #F6F6F6;
 }
 
 //Buses
+div#bus_page {
+  height: 3000px;
+}
+
 #bus_page {
 
+  .TPh1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: $navBarColors;
 
-  table {
+  }
+ .busTBL1 {
+    display: inline;
+    float: left;
+
+  }
+  .busTBL2 {
+    display: inline;
+    float: left;
+    margin-top: -54px;
+    margin-left: 25px;
+
+  }
+  label {
+    display: inline;
+  }
+ table {
     display: inline;
     text-align: center;
     margin-left: auto;
