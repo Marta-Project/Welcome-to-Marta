@@ -12,7 +12,6 @@
 
       $scope.sesh = $cookies.get('sessionToken');
 
-      $scope.objID = $cookies.get('objectID');
 
    // Retrieving the User Object ID
 
