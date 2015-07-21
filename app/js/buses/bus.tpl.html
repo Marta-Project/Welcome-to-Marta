@@ -2,14 +2,16 @@
 
 
 
-<!-- </div>
- --><h1 class='TPh1'>Which Bus would you like to board?</h1>
+
+
+ <h1 class='TPh1'>Which Bus would you like to board?</h1>
 
  <div class="busTBL1">
-
-  <label>Search by Route: <input ng-model="searchText"></label>
-
+  <!-- Route Finder -->
+  <label>Search by Route: <input ng-model="searchText" placeholder="Search by Route"></label>
+  <!-- Refresh Button -->
   <button ng-click="refresh()">Refresh</button><br>
+  <!-- Bus Info -->
     <table class="busTable">
     <caption>Northbound Buses</caption>
       <tr>
@@ -19,6 +21,7 @@
         <th>Route</th>
         <th>Direction</th>
       </tr>
+      <!-- Bus Realtime Data -->
       <tr ng-repeat="bus in northBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText">
         <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }}</td>
@@ -29,8 +32,9 @@
     </table>
     </div>
     <br><br><br>
+    <!-- Bus Info -->
     <div class="busTBL2">
-    <label>Search by Location: <input ng-model="searchText2"></label><br>
+    <label>Search by Location: <input ng-model="searchText2" placeholder="Search by Route"></label><br>
     <table>
     <caption>Southbound Buses</caption>
       <tr>
@@ -40,6 +44,7 @@
         <th>Route</th>
         <th>Direction</th>
       </tr>
+      <!-- Bus Realtime Data -->
       <tr ng-repeat="bus in southBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText2" >
         <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }}</td>
@@ -49,6 +54,6 @@
       </tr>
     </table>
 </div>
-
+</div>
 
 </div>
