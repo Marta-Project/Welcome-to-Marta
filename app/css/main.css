@@ -1,5 +1,7 @@
-body {
-  width: 100%; }
+footer {
+  text-align: center; }
+  footer img {
+    width: 100%; }
 
 #trains_page .TPH1 {
   text-align: center;
@@ -85,7 +87,6 @@ nav {
 
 .container {
   background-color: #ffffff;
-  width: 100%;
   text-align: justify;
   padding-left: 100px;
   padding-right: 100px; }

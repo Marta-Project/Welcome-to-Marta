@@ -9,11 +9,15 @@ $table: #F6F6F6;
 
 
 //Global Elements
-body {
-  width: 100%;
-}
-//Main Page Style
 
+//Dashboard
+footer {
+  text-align: center;
+  img {
+    width: 100%;
+
+  }
+}
 
 //Trains
 #trains_page {
@@ -135,7 +139,6 @@ header {
 
 .container {
   background-color: $background;
-  width: 100%;
   text-align: justify;
   padding-left: 100px;
   padding-right: 100px;
