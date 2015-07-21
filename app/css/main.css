@@ -3,6 +3,22 @@ footer {
   footer img {
     width: 100%; }
 
+.DBNewTrips {
+  border: 1px solid black;
+  display: inline;
+  float: right;
+  width: 450px;
+  height: 500px;
+  margin-bottom: 15px; }
+
+.DBtrips {
+  border: 1px solid black;
+  display: inline;
+  width: 450px;
+  height: 500px;
+  margin-bottom: 15px;
+  float: left; }
+
 #trains_page .TPH1 {
   text-align: center;
   padding: 0;
