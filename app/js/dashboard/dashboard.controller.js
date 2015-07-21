@@ -14,15 +14,45 @@
 
       $scope.objID = $cookies.get('objectID');
 
-      //Retrieve User Object ID
+   // Retrieving the User Object ID
 
-      // var retrieveID = function (data) {
-      //   $http.get(PARSE.URL + 'users/me', PARSE.CONFIG).success ( function (ll){
-      //     $cookies.put('objectID', ll.objectID);
-      //   });
-      // };
+   $scope.ID = {};
 
-      // retrieveID();
+   var USERID2 = $cookies.get('username');
+
+   var retrieveID = function () {
+    $http.get(PARSE.URL + 'users', PARSE.CONFIG)
+    .success( function (data){
+      console.log(data);
+
+      $scope.USERID = $cookies.get('objectId');
+
+      angular.forEach($scope.USERID, function (ID){
+        if (ID.username === USERID2) {
+          $scope.ID.push(ID);
+        }
+        else if (ID.username !== USERID2 ) {
+          console.log("did not contain");
+        }
+
+      });
+      console.log($scope.ID);
+    })
+    .error (function (err){
+      console.error(err);
+    });
+
+
+
+   };
+
+   //Create an Instance of Retrieve ID
+
+    retrieveID();
+
+    //Filter out the current user
+
+    var currentID = retrieveID;
 
 
       //Log Out Current User

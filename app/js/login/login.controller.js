@@ -19,6 +19,8 @@
 
           $cookies.put('sessionToken', ll.sessionToken);
           $cookies.put('username', ll.username);
+          $cookies.put('objectId', ll.objectId);
+          console.log(ll.objectId);
 //redirects to homepage on success
           $location.path('/');
 //defines user as a object

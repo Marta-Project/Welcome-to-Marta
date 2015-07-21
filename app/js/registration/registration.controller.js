@@ -25,7 +25,6 @@
 
         $cookies.put('sessionToken', data.sessionToken);
         $cookies.put('username', data.username);
-        $cookies.put('objectID', data.objectID);
 
         $location.path('/login');
 
