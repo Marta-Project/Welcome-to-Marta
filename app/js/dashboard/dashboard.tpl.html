@@ -21,9 +21,11 @@
 
   <!-- Right Page Content -->
   <div class="DBNewTrips">
+    <h3>Pick Station to Add to Your Favorites:</h3>
+    <hr />
     <!-- List of Stations -->
     <ol>
-      <li ng-repeat="station in stations">{{ station.Station }}</li>
+      <li ng-repeat="station in stations">{{ station.Station }}<button>Add to Favorites</button></li>
     </ol>
 
 
