@@ -4,25 +4,37 @@
 
   <h1>Welcome {{ userName }}</h1>
   <h2> {{ sesh }}</h2>
-</div>
+  <h2>{{ USERID }}</h2>
 <button ng-click="logout();">Logout</button>
-  <div class="DBtrips">
-  <h3 class="DByourTrips">Favorite Stations and Bus Routes:</h3>
-    <div class="DBTripContent">
-      <ul>
-        <!-- <li ng-repeat><a href="#">{{ myTrips }}</a></li> -->
-      </ul>
-    </div>
+</div>
+
+
+  <!-- Left Page Content -->
+  <div class="DBtrips"> <!-- Block for Favorite Stations -->
+    <h3 class="DByourTrips">Favorite Stations and Bus Routes:</h3>
+
+      <div class="DBTripContent">
+
+      </div>
 
   </div>
 
+
+  <!-- Right Page Content -->
   <div class="DBNewTrips">
+    <h3>Pick Station to Add to Your Favorites:</h3>
+    <hr />
+    <!-- List of Stations -->
+    <ol>
+      <li ng-repeat="station in stations">{{ station.Station }}<button>Add to Favorites</button></li>
+    </ol>
 
 
   </div>
 
-  <div class="DBBanner">
-    <img src="#">
-  </div>
 
+<footer>
+  <img src="images/atlanta.jpg">
+  <!-- Img Src = http://wandering.tv/wp-content/uploads/2014/10/atlanta-27.jpg -->
+</footer>
 </div>

@@ -1,44 +1,48 @@
 <div id="about_page">
 
+<!-- Set Controller -->
 
-<h2>About the Creators</h2>
-<!-- About Bobby -->
-<div class="bobby">
-<!-- Image Source -->
-  <img src="images/Bio Pic.jpg" class='APimg1'>
-  <!-- Start of Modal Initiation -->
-    <button ng-click='toggleModal()'>Read More</button>
-      <!-- Modal HTML Setup -->
-        <modal-dialog show='dialogShown'  width='750px' height='60%' dialog-title='Bobby Fine'>
+<div ng-controller="About">
+
+
+  <h2>About the Creators</h2>
+  <!-- About Bobby -->
+  <div class="bobby">
+  <!-- Image Source -->
+    <img src="images/Bio Pic.jpg" class='APimg1'>
+    <!-- Start of Modal Initiation -->
+      <button ng-click='toggleModal()'>Read More</button>
+        <!-- Modal HTML Setup -->
+          <modal-dialog show='dialogShown'  width='750px' height='60%' dialog-title='Bobby Fine'>
+            <!-- Modal Text -->
+              <p>Hello Bobby</p>
+          </modal-dialog>
+            <!-- Email -->
+          <h4><a href="mailto:robertfine4631@icloud.com">Email Bobby</a></h4>
+            <!-- Github Account Info -->
+          <h4><a href="https://github.com/robertfine4631">Github Username</a></h4>
+            <!-- Github Logo -->
+          <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
+  </div>
+
+  <!-- About Chris -->
+  <div class="chris">
+  <!-- Image Source -->
+    <img src="images/20150626-IMG_7907-Edit.jpg" class='APimg1'>
+      <!-- Start of Modal Initiation -->
+      <button ng-click='toggleChrisModal()'>Read More</button>
+        <!-- Modal HTML Setup -->
+        <modal-dialog show='chrisDialogShown'  width='750px' height='60%' dialog-title='Christian Bustamante'>
           <!-- Modal Text -->
-            <p>Hello Bobby</p>
+        <p>hello chris</p>
         </modal-dialog>
           <!-- Email -->
-        <h4><a href="mailto:robertfine4631@icloud.com">Email Bobby</a></h4>
+        <h4><a href="mailto:chrisbusta@hotmail.com">Email Chris</a></h4>
           <!-- Github Account Info -->
-        <h4><a href="https://github.com/robertfine4631">Github Username</a></h4>
+        <h4><a href="https://github.com/chrisbusta">Github Username</a></h4>
           <!-- Github Logo -->
         <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
-</div>
+  </div>
 
-<!-- About Chris -->
-<div class="chris">
-<!-- Image Source -->
-  <img src="images/20150626-IMG_7907-Edit.jpg" class='APimg1'>
-    <!-- Start of Modal Initiation -->
-    <button ng-click='toggleChrisModal()'>Read More</button>
-      <!-- Modal HTML Setup -->
-      <modal-dialog show='chrisDialogShown'  width='750px' height='60%' dialog-title='Christian Bustamante'>
-        <!-- Modal Text -->
-      <p>hello chris</p>
-      </modal-dialog>
-        <!-- Email -->
-      <h4><a href="mailto:chrisbusta@hotmail.com">Email Chris</a></h4>
-        <!-- Github Account Info -->
-      <h4><a href="https://github.com/chrisbusta">Github Username</a></h4>
-        <!-- Github Logo -->
-      <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
+  </div>
 </div>
-
-</div>
-
