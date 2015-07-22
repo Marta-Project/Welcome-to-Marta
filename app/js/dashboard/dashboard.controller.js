@@ -114,6 +114,33 @@
           });
         };
 
+        //Function To Pull the Favorite Station From Parse and Display it under Favorite
+          //Declar Empty Array
+        $scope.favoriteStations = [];
+          //Acquire the user's specific Station
+       $http.get(PARSE.URL + 'users/' + $scope.ObjectID, PARSE.CONFIG)
+        .success (function (data){
+          console.log(data);
+          $scope.information = data;
+          $scope.favoriteStations.push(data);
+          console.log($scope.favoriteStations);
+
+
+
+          // angular.forEach($scope.information, function (station){
+          //   if (station.favoriteStations !== 'undefined') {
+          //     $scope.favoriteStations.push(station);
+          //   }
+          //   else {
+          //     console.log('The User Does Not Have A Favorite Station');
+          //   }
+          });
+          console.log($scope.favoriteStations);
+        // });
+
+
+
+
     }
 
     ]);

@@ -12,9 +12,13 @@
 
   <!-- Left Page Content -->
   <div class="DBtrips"> <!-- Block for Favorite Stations -->
-    <h3 class="DByourTrips">Favorite Stations and Bus Routes:</h3>
+    <h3 class="DByourTrips">Favorite Station:</h3>
 
       <div class="DBTripContent">
+
+      <ol>
+        <li ng-repeat="user in favoriteStations"> {{ user.favoriteStation }}</li>
+      </ol>
 
       </div>
 
@@ -32,10 +36,9 @@
 
     <ol>
       <li><button ng-click="updateUser({'favoriteStation' : 'North Springs'});">North Springs</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'North Springs'});">North Springs</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Sandy Springs'});">Sandy Springs</button></li>
       <li><button ng-click="updateUser({'favoriteStation' : 'Dunwoody'});">Dunwoody</button></li>
       <li><button ng-click="updateUser({'favoriteStation' : 'Medical Center'});">Medical Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Dunwoody'});">Dunwoody</button></li>
       <li><button ng-click="updateUser({'favoriteStation' : 'Buckhead'});">Buckhead</button></li>
       <li><button ng-click="updateUser({'favoriteStation' : 'Doraville'});">Doraville</button></li>
       <li><button ng-click="updateUser({'favoriteStation' : 'Chamlbee'});">Chamblee</button></li>
