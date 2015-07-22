@@ -80,7 +80,7 @@ footer {
   }
   .trainTBL2 {
     display: inline;
-    float: left;
+    float: right;
     margin-top: -54px;
     margin-left: 25px;
   }
@@ -116,16 +116,41 @@ footer {
 }
 
 //Buses
+div#bus_page {
+  height: 3000px;
+}
+
 #bus_page {
 
+  .TPh1 {
+    // text-align: center;
+    padding: 0;
+    margin: 0;
 
-  table {
+  }
+ .busTBL1 {
+    display: inline;
+    float: left;
+
+  }
+  .busTBL2 {
+    display: inline;
+    float: right;
+    margin-top: -54px;
+    margin-left: 25px;
+
+  }
+  label {
+    display: inline;
+  }
+ table {
     display: inline;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
     padding: 4px;
+    font-size: .67em;
 
     th {
       margin-left: 10px;
@@ -213,7 +238,9 @@ h1 {
 
 .chris h4 img {
   width: 50px; }
-
+p {
+  font-size: 30px;
+}
 
 //DashBoard Style
 
