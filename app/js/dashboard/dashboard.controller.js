@@ -90,13 +90,13 @@
 
 
 
-
         //Test for Posting new column to Users
 
         $scope.updateUser = function(data) {
           $http.put(PARSE.URL + 'users/' + $scope.ObjectID, data, PARSE.CONFIG)
           .success( function (data){
             console.log(data);
+          angular.toJson(data, true);
           });
         };
 
