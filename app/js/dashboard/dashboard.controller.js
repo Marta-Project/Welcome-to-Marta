@@ -12,7 +12,9 @@
 
       $scope.sesh = $cookies.get('sessionToken');
 
+      $scope.ObjectID = $cookies.get('objectId');
 
+      var sessionT = $scope.sesh;
    // Retrieving the User Object ID
 
    $scope.ID = {};
@@ -26,21 +28,21 @@
 
       $scope.USERID = $cookies.get('objectId');
 
-      angular.forEach($scope.USERID, function (ID){
-        if (ID.username === USERID2) {
-          $scope.ID.push(ID);
-        }
-        else if (ID.username !== USERID2 ) {
-          console.log("did not contain");
-        }
+      // angular.forEach($scope.USERID, function (ID){
+      //   if (ID.username === USERID2) {
+      //     $scope.ID.push(ID);
+      //   }
+      //   else if (ID.username !== USERID2 ) {
+      //     console.log("did not contain");
+      //   }
+  console.log($scope.USERID);
 
-      });
-      console.log($scope.ID);
-    })
-    .error (function (err){
-      console.error(err);
+      // });
+      // console.log($scope.ID);
     });
-
+    // .error (function (err){
+    //   console.error(err);
+    // });
 
 
    };
@@ -59,7 +61,7 @@
 
         var removeSessionToken = function () {$cookies.remove('sessionToken');};
         var removeUserName = function () {$cookies.remove('username');};
-        var removeObjID = function () {$cookies.remove('objectID');};
+        var removeObjID = function () {$cookies.remove('objectId');};
         removeSessionToken();
         removeUserName();
         removeObjID();
@@ -99,6 +101,15 @@
 
 
 
+
+        //Test for Posting new column to Users
+
+        $scope.updateUser = function(data) {
+          $http.put(PARSE.URL + 'users/' + $scope.ObjectID, data, PARSE.CONFIG)
+          .success( function (data){
+            console.log(data);
+          });
+        };
 
     }
 
