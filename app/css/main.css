@@ -41,7 +41,7 @@ footer {
 
 #trains_page .trainTBL2 {
   display: inline;
-  float: left;
+  float: right;
   margin-top: -54px;
   margin-left: 25px; }
 
@@ -72,10 +72,8 @@ div#bus_page {
   height: 3000px; }
 
 #bus_page .TPh1 {
-  text-align: center;
   padding: 0;
-  margin: 0;
-  color: #1D6FB1; }
+  margin: 0; }
 
 #bus_page .busTBL1 {
   display: inline;
@@ -83,7 +81,7 @@ div#bus_page {
 
 #bus_page .busTBL2 {
   display: inline;
-  float: left;
+  float: right;
   margin-top: -54px;
   margin-left: 25px; }
 
@@ -96,7 +94,8 @@ div#bus_page {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  padding: 4px; }
+  padding: 4px;
+  font-size: .67em; }
   #bus_page table th {
     margin-left: 10px;
     margin-right: 10px; }
@@ -161,6 +160,9 @@ h1 {
 
 .chris h4 img {
   width: 50px; }
+
+p {
+  font-size: 30px; }
 
 .phonePic h4 {
   float: right;
