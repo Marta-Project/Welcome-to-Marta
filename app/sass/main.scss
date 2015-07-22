@@ -11,6 +11,11 @@ $table: #F6F6F6;
 //Global Elements
 
 //Dashboard
+.logoutBtn {
+  float: right;
+  margin-bottom: 15px;
+}
+
 footer {
   text-align: center;
   img {
@@ -45,12 +50,18 @@ footer {
   border: 1px solid black;
   display: inline;
   width: 450px;
-  height: 500px;
   margin-bottom: 15px;
   float: left;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 
   .DBTripContent {
-    border: 1px solid black;
+    ol {
+      li {
+        list-style: none;
+      }
+    }
   }
 }
 

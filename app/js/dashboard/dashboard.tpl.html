@@ -3,19 +3,17 @@
 <div ng-controller="Dashboard">
 
   <h1>Welcome {{ userName }}</h1>
-  <h2> {{ sesh }}</h2>
-  <h2>{{ ObjectID }}</h2>
-<button ng-click="logout();">Logout</button>
+  <!-- <h2> {{ sesh }}</h2> -->
+  <!-- <h2>{{ ObjectID }}</h2> -->
+<button ng-click="logout();" class="logoutBtn">Logout</button>
 </div>
 
-<button ng-click="updateUser([{'Test':'Test'}]);">Update</button>
 
   <!-- Left Page Content -->
   <div class="DBtrips"> <!-- Block for Favorite Stations -->
 
-  <!-- Refresh Button -->
-  <button ng-click="DBrefresh();">Refresh Favorite Station</button>
     <h3 class="DByourTrips">Favorite Station:</h3>
+    <hr />
 
       <div class="DBTripContent">
 
@@ -25,6 +23,8 @@
 
       </div>
 
+  <!-- Refresh Button -->
+  <button ng-click="DBrefresh();">Refresh Favorite Station</button>
   </div>
 
 

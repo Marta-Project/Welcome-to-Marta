@@ -1,3 +1,7 @@
+.logoutBtn {
+  float: right;
+  margin-bottom: 15px; }
+
 footer {
   text-align: center; }
   footer img {
@@ -23,11 +27,13 @@ footer {
   border: 1px solid black;
   display: inline;
   width: 450px;
-  height: 500px;
   margin-bottom: 15px;
-  float: left; }
-  .DBtrips .DBTripContent {
-    border: 1px solid black; }
+  float: left;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .DBtrips .DBTripContent ol li {
+    list-style: none; }
 
 #trains_page .TPH1 {
   text-align: center;
