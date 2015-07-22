@@ -41,7 +41,6 @@
 
    // Refresh Button
     $scope.refresh = function () {
-      //Clear the array using the Pop method?
       $scope.northTrains = [];
       $scope.southTrains = [];
 

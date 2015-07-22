@@ -4,9 +4,9 @@
 
   angular.module('marta')
 
-  .controller('Dashboard', ['$scope', '$http', 'PARSE', '$cookies', '$location', 'HeaderService',
+  .controller('Dashboard', ['$scope', '$http', 'PARSE', '$cookies', '$location', 'HeaderService', '$route',
 
-    function ($scope, $http, PARSE, $cookies, $location, HeaderService ){
+    function ($scope, $http, PARSE, $cookies, $location, HeaderService, $route ){
 
       HeaderService.headerConfig();
 
@@ -31,22 +31,8 @@
 
       $scope.USERID = $cookies.get('objectId');
 
-      // angular.forEach($scope.USERID, function (ID){
-      //   if (ID.username === USERID2) {
-      //     $scope.ID.push(ID);
-      //   }
-      //   else if (ID.username !== USERID2 ) {
-      //     console.log("did not contain");
-      //   }
   console.log($scope.USERID);
-
-      // });
-      // console.log($scope.ID);
     });
-    // .error (function (err){
-    //   console.error(err);
-    // });
-
 
    };
 
@@ -122,21 +108,24 @@
         .success (function (data){
           console.log(data);
           $scope.information = data;
+          //push the data into new array
           $scope.favoriteStations.push(data);
           console.log($scope.favoriteStations);
 
-
-
-          // angular.forEach($scope.information, function (station){
-          //   if (station.favoriteStations !== 'undefined') {
-          //     $scope.favoriteStations.push(station);
-          //   }
-          //   else {
-          //     console.log('The User Does Not Have A Favorite Station');
-          //   }
           });
           console.log($scope.favoriteStations);
-        // });
+
+
+            //Refresh Button for Dashboard
+
+
+          $scope.DBrefresh = function ()  {
+            $route.reload();
+           };
+
+
+
+
 
 
 
