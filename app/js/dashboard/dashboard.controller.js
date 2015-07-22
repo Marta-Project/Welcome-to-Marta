@@ -4,9 +4,12 @@
 
   angular.module('marta')
 
-  .controller('Dashboard', ['$scope', '$http', 'PARSE', '$cookies', '$location',
+  .controller('Dashboard', ['$scope', '$http', 'PARSE', '$cookies', '$location', 'HeaderService',
 
-    function ($scope, $http, PARSE, $cookies, $location ){
+    function ($scope, $http, PARSE, $cookies, $location, HeaderService ){
+
+      HeaderService.headerConfig();
+
 
       $scope.userName = $cookies.get('username');
 
