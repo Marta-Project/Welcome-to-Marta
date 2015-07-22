@@ -27,7 +27,7 @@
     <hr />
     <!-- List of Stations -->
     <ol>
-      <li ng-repeat="station in stations">{{ station.Station }}<button>Add to Favorites</button></li>
+      <li ng-repeat="station in stations"><button ng-click="updateUser({'favoriteStation' : '{{ station.Station }}' });">{{ station.Station }}</button></li>
     </ol>
 
 

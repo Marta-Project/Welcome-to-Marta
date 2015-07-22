@@ -16,9 +16,8 @@ footer {
   .DBNewTrips ol li {
     list-style: none;
     margin-top: 7px;
-    margin-bottom: 7px; }
-    .DBNewTrips ol li button {
-      float: right; }
+    margin-bottom: 7px;
+    text-align: center; }
 
 .DBtrips {
   border: 1px solid black;
