@@ -26,8 +26,35 @@
     <h3>Pick Station to Add to Your Favorites:</h3>
     <hr />
     <!-- List of Stations -->
+  <!--   <ol>
+      <li ng-repeat="station in stations"><button ng-click="updateUser({'favoriteStation' : '{{ station.Station }}'});">{{ station.Station }}</button></li>
+    </ol> -->
+
     <ol>
-      <li ng-repeat="station in stations"><button ng-click="updateUser({'favoriteStation' : '{{ station.Station }}' });">{{ station.Station }}</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'North Springs'});">North Springs</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'North Springs'});">North Springs</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Dunwoody'});">Dunwoody</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Medical Center'});">Medical Center</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Dunwoody'});">Dunwoody</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Buckhead'});">Buckhead</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Doraville'});">Doraville</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Chamlbee'});">Chamblee</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Brookehaven/Oglethorpe'});">Brookehaven/Oglethorpe</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Lenox'});">Lenox</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Lindbergh Center'});">Lindbergh Center</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Arts Center'});">Arts Center</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Midtown'});">Midtown</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'North Avenue'});">North Avenue</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Civic Center'});">Civic Center</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Peachtree Center'});">Peachtree Center</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Five Points'});">Five Points</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Garnett'});">Garnett</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'West End'});">West End</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Oakland City'});">Oakland City</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Lakewood/Ft. McPherson'});">Lakewood/Ft. McPherson</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'East Point'});">East Point</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'College Park'});">College Park</button></li>
+      <li><button ng-click="updateUser({'favoriteStation' : 'Airport'});">Airport</button></li>
     </ol>
 
 
