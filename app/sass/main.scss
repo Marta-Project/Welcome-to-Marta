@@ -91,8 +91,6 @@ footer {
     text-align: center;
     padding: 0;
     margin: 0;
-
-
   }
 
   .trainTBL1 {
@@ -150,21 +148,17 @@ footer {
  .busTBL1 {
     display: inline;
     float: left;
-    padding-right: 50px;
-    padding-left: 50px;
 
   }
   .busTBL2 {
     display: inline;
     float: left;
     margin-top: -54px;
-    margin-left: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-
+    margin-left: auto;
   }
   label {
     display: inline;
+
   }
  table {
     display: inline;
@@ -173,7 +167,7 @@ footer {
     margin-right: auto;
     margin-bottom: 15px;
     padding: 4px;
-    font-size: .67em;
+    font-size: .6em;
 
     th {
       margin-left: 10px;
@@ -234,8 +228,8 @@ header {
 .container {
   background-color: $background;
   text-align: justify;
-  // padding-left: 100px;
-  // padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {

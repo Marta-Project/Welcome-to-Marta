@@ -93,17 +93,13 @@ footer {
 
 #bus_page .busTBL1 {
   display: inline;
-  float: left;
-  padding-right: 50px;
-  padding-left: 50px; }
+  float: left; }
 
 #bus_page .busTBL2 {
   display: inline;
   float: left;
   margin-top: -54px;
-  margin-left: 25px;
-  padding-left: 50px;
-  padding-right: 50px; }
+  margin-left: auto; }
 
 #bus_page label {
   display: inline; }
@@ -115,7 +111,7 @@ footer {
   margin-right: auto;
   margin-bottom: 15px;
   padding: 4px;
-  font-size: .67em; }
+  font-size: .6em; }
   #bus_page table th {
     margin-left: 10px;
     margin-right: 10px; }
@@ -155,7 +151,9 @@ nav {
 
 .container {
   background-color: #ffffff;
-  text-align: justify; }
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto; }
 
 h1 {
   text-align: center; }

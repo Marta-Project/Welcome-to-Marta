@@ -8,7 +8,7 @@
 
  <div class="busTBL1">
   <!-- Route Finder -->
-  <label>Search by Route: <input ng-model="searchText" placeholder="Search by Route"></label>
+  <label>Search by Location: <input ng-model="searchText" placeholder="Search by Route"></label>
   <!-- Refresh Button -->
   <button ng-click="refresh()">Refresh</button><br>
   <!-- Bus Info -->
@@ -34,7 +34,9 @@
     <br><br><br>
     <!-- Bus Info -->
     <div class="busTBL2">
-    <label>Search by Route: <input ng-model="searchText2" placeholder="Search by Route"></label><br>
+    <!-- Label Start -->
+      <label>Search by Location: <input ng-model="searchText2" placeholder="Search by Route"></label><br>
+    <!-- Table Start -->
     <table>
     <caption>Southbound Buses</caption>
       <tr>
