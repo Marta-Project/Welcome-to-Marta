@@ -28,7 +28,6 @@ HeaderService.headerConfig();
 
       });
       console.log($scope.northTrainsRed);
-      console.log($scope.northTrainsGold);
       console.log($scope.southTrains);
     })
    .error (function (err){

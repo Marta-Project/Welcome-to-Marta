@@ -22,6 +22,32 @@
       <ol>
        <li ng-repeat="user in favoriteStations"> {{ user.favoriteStation }}</li>
       </ol>
+        <div class="favTab" ng-controller="TrainTable">
+          <table class="North">
+            <tr>
+              <th>{{ trainNorth.NEXT_ARR }}</th>
+              <th>Waiting Time</th>
+              <th>Line</th>
+            </tr>
+            <tr>
+              <td>Next Arrival</td>
+              <td>Waiting Time</td>
+              <td>Line</td>
+            </tr>
+          </table>
+          <table class="South">
+            <tr>
+              <th>Next Arrival</th>
+              <th>Waiting Time</th>
+              <th>Line</th>
+            </tr>
+            <tr>
+              <td>Next Arrival</td>
+              <td>Waiting Time</td>
+              <td>Line</td>
+            </tr>
+          </table>
+        </div>
     </div>
     <br><br>
     <!-- Refresh Button -->
