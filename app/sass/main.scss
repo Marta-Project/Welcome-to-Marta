@@ -10,7 +10,7 @@ $table: #F6F6F6;
 
 //Global Elements
 body {
-  min-width: 400px;
+  min-width: 320px;
 }
 //Dashboard
 .logoutBtn {
@@ -39,7 +39,7 @@ footer {
   border: 1px solid black;
   display: inline;
   float: left;
-  width: 350px;
+  width: 300px;
   margin-bottom: 15px;
   padding-right: 10px;
   padding-left: 10px;
@@ -48,6 +48,8 @@ footer {
     text-align: center;
   }
   ol {
+    text-align: center;
+    padding: 0;
     li {
       list-style: none;
       margin-top: 7px;
@@ -61,7 +63,7 @@ footer {
 
   border: 1px solid black;
   display: inline;
-  width: 350px;
+  width: 300px;
   margin-bottom: 15px;
   float: left;
   text-align: center;
@@ -80,8 +82,8 @@ footer {
 
 //Trains
 #trains_page {
-  // padding-right: 50px;
-  // padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
     h2 {
       text-align: center;
     }
@@ -89,8 +91,6 @@ footer {
     text-align: center;
     padding: 0;
     margin: 0;
-
-
   }
 
   .trainTBL1 {
@@ -101,7 +101,7 @@ footer {
     display: inline;
     float: left;
     margin-top: -54px;
-    margin-left: 25px;
+    margin-left: auto;
   }
   label {
     display: inline;
@@ -148,21 +148,34 @@ footer {
  .busTBL1 {
     display: inline;
     float: left;
-    padding-right: 50px;
-    padding-left: 50px;
+    margin-bottom: 50px;
+
+    .BusH {
+      padding-right: 7px;
+      padding-right: 7px;
+      text-align: center;
+
+      .BusCap {
+        font-weight: 800;
+      }
+    }
 
   }
   .busTBL2 {
     display: inline;
-    float: right;
+    float: left;
     margin-top: -54px;
-    margin-left: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: auto;
 
+    .BusH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center;
+    }
   }
   label {
     display: inline;
+
   }
  table {
     display: inline;
@@ -171,7 +184,7 @@ footer {
     margin-right: auto;
     margin-bottom: 15px;
     padding: 4px;
-    font-size: .67em;
+    font-size: .6em;
 
     th {
       margin-left: 10px;
@@ -232,8 +245,8 @@ header {
 .container {
   background-color: $background;
   text-align: justify;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {

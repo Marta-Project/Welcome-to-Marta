@@ -1,5 +1,5 @@
 body {
-  min-width: 400px; }
+  min-width: 320px; }
 
 .logoutBtn {
   margin-bottom: 15px;
@@ -20,22 +20,25 @@ footer {
   border: 1px solid black;
   display: inline;
   float: left;
-  width: 350px;
+  width: 300px;
   margin-bottom: 15px;
   padding-right: 10px;
   padding-left: 10px; }
   .DBNewTrips h3 {
     text-align: center; }
-  .DBNewTrips ol li {
-    list-style: none;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    text-align: center; }
+  .DBNewTrips ol {
+    text-align: center;
+    padding: 0; }
+    .DBNewTrips ol li {
+      list-style: none;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      text-align: center; }
 
 .DBtrips {
   border: 1px solid black;
   display: inline;
-  width: 350px;
+  width: 300px;
   margin-bottom: 15px;
   float: left;
   text-align: center;
@@ -45,46 +48,44 @@ footer {
   .DBtrips .DBTripContent ol li {
     list-style: none; }
 
-#trains_page h2 {
-  text-align: center; }
-
-#trains_page .TPH1 {
-  text-align: center;
-  padding: 0;
-  margin: 0; }
-
-#trains_page .trainTBL1 {
-  display: inline;
-  float: left; }
-
-#trains_page .trainTBL2 {
-  display: inline;
-  float: left;
-  margin-top: -54px;
-  margin-left: 25px; }
-
-#trains_page label {
-  display: inline; }
-
-#trains_page table {
-  display: inline;
-  text-align: center;
-  margin-bottom: 15px;
-  padding: 4px;
-  font-size: .63em;
-  float: left; }
-  #trains_page table th {
-    margin-left: 10px;
-    margin-right: 10px; }
-  #trains_page table .station {
-    text-align: left; }
-  #trains_page table .waiting {
-    text-align: right; }
-  #trains_page table td {
+#trains_page {
+  margin-right: auto;
+  margin-left: auto; }
+  #trains_page h2 {
+    text-align: center; }
+  #trains_page .TPH1 {
     text-align: center;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: #F6F6F6; }
+    padding: 0;
+    margin: 0; }
+  #trains_page .trainTBL1 {
+    display: inline;
+    float: left; }
+  #trains_page .trainTBL2 {
+    display: inline;
+    float: left;
+    margin-top: -54px;
+    margin-left: auto; }
+  #trains_page label {
+    display: inline; }
+  #trains_page table {
+    display: inline;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 4px;
+    font-size: .63em;
+    float: left; }
+    #trains_page table th {
+      margin-left: 10px;
+      margin-right: 10px; }
+    #trains_page table .station {
+      text-align: left; }
+    #trains_page table .waiting {
+      text-align: right; }
+    #trains_page table td {
+      text-align: center;
+      padding: 5px;
+      border: 1px solid black;
+      background-color: #F6F6F6; }
 
 #bus_page .TPh1 {
   padding: 0;
@@ -93,16 +94,23 @@ footer {
 #bus_page .busTBL1 {
   display: inline;
   float: left;
-  padding-right: 50px;
-  padding-left: 50px; }
+  margin-bottom: 50px; }
+  #bus_page .busTBL1 .BusH {
+    padding-right: 7px;
+    padding-right: 7px;
+    text-align: center; }
+    #bus_page .busTBL1 .BusH .BusCap {
+      font-weight: 800; }
 
 #bus_page .busTBL2 {
   display: inline;
-  float: right;
+  float: left;
   margin-top: -54px;
-  margin-left: 25px;
-  padding-left: 50px;
-  padding-right: 50px; }
+  margin-left: auto; }
+  #bus_page .busTBL2 .BusH {
+    padding-right: 7px;
+    padding-left: 7px;
+    text-align: center; }
 
 #bus_page label {
   display: inline; }
@@ -114,7 +122,7 @@ footer {
   margin-right: auto;
   margin-bottom: 15px;
   padding: 4px;
-  font-size: .67em; }
+  font-size: .6em; }
   #bus_page table th {
     margin-left: 10px;
     margin-right: 10px; }
@@ -155,8 +163,8 @@ nav {
 .container {
   background-color: #ffffff;
   text-align: justify;
-  padding-left: 100px;
-  padding-right: 100px; }
+  margin-left: auto;
+  margin-right: auto; }
 
 h1 {
   text-align: center; }
