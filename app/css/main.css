@@ -1,6 +1,46 @@
 body {
   min-width: 320px; }
 
+#dashboard_page {
+  text-align: center; }
+  #dashboard_page .breakcontainer {
+    padding-right: 7px;
+    padding-left: 7px; }
+  #dashboard_page .logoutBtn {
+    border-radius: 5px; }
+  #dashboard_page .DBcontainer .DBtrips {
+    width: 300px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border: 1px solid #000000;
+    display: inline-block;
+    float: left; }
+    #dashboard_page .DBcontainer .DBtrips .DBTripContent ol {
+      list-style: none;
+      padding: 0; }
+  #dashboard_page .DBcontainer .martaMap {
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  #dashboard_page .DBcontainer .DBNewTrips {
+    width: 300px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border: 1px solid #000000;
+    display: inline-block;
+    float: right;
+    margin-bottom: 15px; }
+    #dashboard_page .DBcontainer .DBNewTrips ol {
+      list-style: none;
+      padding: none; }
+      #dashboard_page .DBcontainer .DBNewTrips ol li button {
+        border-radius: 5px; }
+  #dashboard_page footer {
+    width: 100%;
+    clear: both; }
+    #dashboard_page footer img {
+      width: 100%; }
+
 #trains_page {
   margin-right: auto;
   margin-left: auto; }

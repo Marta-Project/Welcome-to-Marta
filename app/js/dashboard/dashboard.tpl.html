@@ -1,9 +1,17 @@
 <div id="dashboard_page">
   <!-- Heading -->
-  <h1>Welcome {{ userName }}</h1>
+  <div class="breakcontainer">
+    <h1>Welcome {{ userName }}</h1>
+    <hr />
+  </div>
   <!-- <h2> {{ sesh }}</h2> -->
   <!-- <h2>{{ ObjectID }}</h2> -->
+
+  <!-- Logout Button -->
 <button ng-click="logout();" class="logoutBtn">Logout</button>
+<br><br>
+
+<div class="DBcontainer">
 
   <!-- Left Page Content -->
   <div class="DBtrips">
@@ -20,49 +28,23 @@
     <button ng-click="DBrefresh();">Refresh Favorite Station</button>
     <br><br>
   </div>
-
-
+  <!-- End Left Page Content -->
+  <!-- Mid Page Content -->
+  <img src="images/MapA_parknride.png" class="martaMap">
   <!-- Right Page Content -->
   <div class="DBNewTrips">
     <h3>Pick Station to Add to Your Favorites:</h3>
     <hr />
     <!-- List of Stations -->
-  <!--   <ol>
-      <li ng-repeat="station in stations"><button ng-click="updateUser({'favoriteStation' : '{{ station.Station }}'});">{{ station.Station }}</button></li>
-    </ol> -->
-
     <ol>
-      <li><button ng-click="updateUser({'favoriteStation' : 'North Springs'});">North Springs</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Sandy Springs'});">Sandy Springs</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Dunwoody'});">Dunwoody</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Medical Center'});">Medical Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Buckhead'});">Buckhead</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Doraville'});">Doraville</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Chamlbee'});">Chamblee</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Brookehaven/Oglethorpe'});">Brookehaven/Oglethorpe</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Lenox'});">Lenox</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Lindbergh Center'});">Lindbergh Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Arts Center'});">Arts Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Midtown'});">Midtown</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'North Avenue'});">North Avenue</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Civic Center'});">Civic Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Peachtree Center'});">Peachtree Center</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Five Points'});">Five Points</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Garnett'});">Garnett</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'West End'});">West End</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Oakland City'});">Oakland City</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Lakewood/Ft. McPherson'});">Lakewood/Ft. McPherson</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'East Point'});">East Point</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'College Park'});">College Park</button></li>
-      <li><button ng-click="updateUser({'favoriteStation' : 'Airport'});">Airport</button></li>
+      <li ng-repeat="station in stations"><button ng-click="updateUser({'favoriteStation' : station.station });">{{ station.Station }}</button></li>
     </ol>
 
 
   </div>
-
-
 </div>
 <footer>
   <img src="images/atlanta.jpg">
   <!-- Img Src = http://wandering.tv/wp-content/uploads/2014/10/atlanta-27.jpg -->
 </footer>
+</div>

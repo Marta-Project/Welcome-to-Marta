@@ -6,6 +6,7 @@ $invalid: #E95151;
 $valid: #6DE7A3;
 $buttonColors:#F6F6F6;
 $table: #F6F6F6;
+$borderColor: #000000;
 
 
 //Global Elements
@@ -13,7 +14,69 @@ body {
   min-width: 320px;
 }
 //Dashboard
+#dashboard_page {
+  text-align: center;
 
+  .breakcontainer {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .logoutBtn {
+    border-radius: 5px;
+  }
+  .DBcontainer {
+  //Left Content Styling
+    .DBtrips {
+      width: 300px;
+      padding-right: 7px;
+      padding-left: 7px;
+      border: 1px solid $borderColor;
+      display: inline-block;
+      float: left;
+
+      .DBTripContent {
+        ol {
+          list-style: none;
+          padding: 0;
+        }
+      }
+    }
+
+    //Map Styling
+    .martaMap {
+      width: 300px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+    }
+    //Right Content Styling
+    .DBNewTrips {
+      width: 300px;
+      padding-right: 7px;
+      padding-left: 7px;
+      border: 1px solid $borderColor;
+      display: inline-block;
+      float: right;
+      margin-bottom: 15px;
+      ol {
+        list-style: none;
+        padding: none;
+        li {
+          button {
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    clear: both;
+    img {
+      width: 100%;
+    }
+  }
+}
 
 //Trains
 #trains_page {
