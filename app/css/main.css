@@ -105,6 +105,8 @@ footer {
 #bus_page .TPh1 {
   padding: 0;
   margin: 0; }
+  #bus_page .TPh1 h2 {
+    text-align: center; }
 
 #bus_page .busTBL1 {
   display: inline;
@@ -141,7 +143,7 @@ footer {
   margin-right: auto;
   margin-bottom: 15px;
   padding: 4px;
-  font-size: .6em; }
+  font-size: .57em; }
   #bus_page table th {
     margin-left: 10px;
     margin-right: 10px; }
@@ -164,7 +166,8 @@ nav {
   padding-right: 100px;
   padding-left: 100px; }
   nav ul {
-    float: right; }
+    float: right;
+    padding: 0; }
     nav ul li {
       text-decoration: none;
       cursor: pointer;

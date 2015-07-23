@@ -4,10 +4,11 @@
 
   angular.module('marta')
 
-  .controller('Contact', ['$scope', '$http',
+  .controller('Contact', ['$scope', '$http', 'HeaderService',
 
-    function ($scope, $http){
+    function ($scope, $http, HeaderService){
 
+      HeaderService.headerConfig();
 
 
 

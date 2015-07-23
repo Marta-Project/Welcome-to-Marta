@@ -4,9 +4,11 @@
 
   angular.module('marta')
 
-  .controller('Buses', ['$scope', '$http',
+  .controller('Buses', ['$scope', '$http', 'HeaderService',
 
-    function($scope, $http){
+    function ($scope, $http, HeaderService){
+
+       HeaderService.headerConfig();
 
         $scope.northBus = [];
         $scope.southBus = [];

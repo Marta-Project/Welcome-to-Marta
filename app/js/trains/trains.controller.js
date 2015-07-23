@@ -4,13 +4,13 @@
 
   angular.module('marta')
 
-  .controller('Trains', ['$scope', '$http',
+  .controller('Trains', ['$scope', '$http', 'HeaderService',
 
-    function ($scope, $http){
+    function ($scope, $http, HeaderService){
 
+HeaderService.headerConfig();
 
     $scope.northTrains = [];
-    // $scope.northTrainsGold = [];
     $scope.southTrains = [];
 
   $http
@@ -25,10 +25,6 @@
         else if( train.DIRECTION === "S"){
           $scope.southTrains.push(train);
         }
-        // else if( train.DIRECTION === "N" && train.LINE === "GOLD") {
-        //   $scope.northTrainsGold.push(train);
-        // }
-
 
       });
       console.log($scope.northTrainsRed);

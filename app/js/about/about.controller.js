@@ -4,9 +4,11 @@
 
   angular.module('marta')
 
-  .controller('About', ['$scope', '$http',
+  .controller('About', ['$scope', '$http','HeaderService',
 
-    function ($scope, $http){
+    function ($scope, $http, HeaderService){
+
+      HeaderService.headerConfig();
 
 
       $scope.toggleModal = function() {

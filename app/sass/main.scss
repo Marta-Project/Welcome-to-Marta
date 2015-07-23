@@ -163,9 +163,11 @@ footer {
 #bus_page {
 
   .TPh1 {
-    // text-align: center;
     padding: 0;
     margin: 0;
+    h2 {
+      text-align: center;
+    }
 
   }
  .busTBL1 {
@@ -213,7 +215,7 @@ footer {
     margin-right: auto;
     margin-bottom: 15px;
     padding: 4px;
-    font-size: .6em;
+    font-size: .57em;
 
     th {
       margin-left: 10px;
@@ -247,6 +249,7 @@ header {
 
   ul {
     float: right;
+    padding: 0;
     li {
       text-decoration: none;
       cursor: pointer;
