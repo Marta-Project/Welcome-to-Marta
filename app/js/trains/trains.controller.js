@@ -51,11 +51,6 @@ HeaderService.headerConfig();
         else if( train.DIRECTION === "S"){
           $scope.southTrains.push(train);
         }
-        // else if( train.DIRECTION === "N" && train.LINE === "GOLD") {
-        //   $scope.northTrainsGold.push(train);
-        // }
-
-
       });
       console.log($scope.northTrainsRed);
       console.log($scope.northTrainsGold);
