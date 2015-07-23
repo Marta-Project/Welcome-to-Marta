@@ -321,8 +321,30 @@ h1 {
 }
 
 //Contact Style
+ #contact_page {
+  text-align: center;
 
+  .CPh1 {
+    text-align: center;
+  }
+  .emailUsContainer {
 
+    .APimg2 {
+      width: 30%;
+    }
+  }
+
+  .contactMartaContainer {
+
+    .APimg3 {
+      width: 75%;
+    }
+  }
+
+  .APimg1 {
+    width: 75%;
+  }
+ }
 //Login Style
 
 #login_container {

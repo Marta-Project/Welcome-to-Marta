@@ -207,6 +207,17 @@ h1 {
   #about_page .bobby h4 img {
     width: 50px; }
 
+#contact_page {
+  text-align: center; }
+  #contact_page .CPh1 {
+    text-align: center; }
+  #contact_page .emailUsContainer .APimg2 {
+    width: 30%; }
+  #contact_page .contactMartaContainer .APimg3 {
+    width: 75%; }
+  #contact_page .APimg1 {
+    width: 75%; }
+
 #login_container {
   height: 450px; }
   #login_container h1 {
