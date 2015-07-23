@@ -286,29 +286,47 @@ h1 {
 }
 
 //About Page Style
+#about_page {
+
+  .headerContainer {
+    padding-right: 7px;
+    padding-left: 7px;
+
+  .header {
+    text-align: center;
+  }
+  }
 .bobby {
   display: inline;
-  float: left; }
-
-.bobby img {
+  float: left;
+  text-align: center;
+  img {
   width: 240px; }
 
-.bobby h4 img {
+  h4 img {
   width: 50px; }
+}
+
+.breakcontainer {
+  padding-right: 7px;
+  padding-left: 7px;
+}
 
 .chris {
-  margin-left: 650px; }
+  float: left;
+  text-align: center;
 
-.chris img {
+img {
   width: 160px; }
 
-.chris h4 img {
+h4 img {
   width: 50px; }
+}
 p {
   font-size: 30px;
 }
 
-//DashBoard Style
+}
 
 //Contact Style
 .phonePic h4 {
@@ -347,20 +365,10 @@ button.BPbut {
   padding-right: 50px;
 }
 
-
-
-
-
-
-
-//Trains Style
-
-
-
 //Login Style
 
 #login_container {
-
+  height: 450px;
 
   h1 {
     text-align: center;
@@ -373,14 +381,12 @@ button.BPbut {
     margin-right: auto;
 
     .input1 {
-      // float: left;
       height: 25px;
       width: 300px;
       display: inline;
       margin: 20px;
     }
     .input2 {
-      // float: left;
       height: 25px;
       width: 300px;
       display: inline;
@@ -390,7 +396,6 @@ button.BPbut {
       clear: both;
       display: inline-block;
       width: 300px;
-      // float: left;
       margin: 0 20px 20px 20px;
     }
   }
@@ -433,10 +438,4 @@ form {
     background-color: $navBarColors;
   }
 
-}
-
-//Login Page
-
-#login_container {
-  height: 450px;
 }

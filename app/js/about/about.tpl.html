@@ -4,8 +4,10 @@
 
 <div ng-controller="About">
 
-
-  <h2>About the Creators</h2>
+<div class="headerContainer">
+  <h2 class="header">About the Creators</h2>
+  <hr />
+</div>
   <!-- About Bobby -->
   <div class="bobby">
   <!-- Image Source -->
@@ -15,7 +17,7 @@
         <!-- Modal HTML Setup -->
           <modal-dialog show='dialogShown'  width='750px' height='60%' dialog-title='Bobby Fine'>
             <!-- Modal Text -->
-              <p>Hello Bobby</p>
+              <p class="modalTextB">Hello Bobby</p>
           </modal-dialog>
             <!-- Email -->
           <h4><a href="mailto:robertfine4631@icloud.com">Email Bobby</a></h4>
@@ -24,25 +26,8 @@
             <!-- Github Logo -->
           <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
   </div>
-
-  <!-- About Chris -->
-  <div class="chris">
-  <!-- Image Source -->
-    <img src="images/20150626-IMG_7907-Edit.jpg" class='APimg1'>
-      <!-- Start of Modal Initiation -->
-      <button ng-click='toggleChrisModal()'>Read More</button>
-        <!-- Modal HTML Setup -->
-        <modal-dialog show='chrisDialogShown'  width='750px' height='60%' dialog-title='Christian Bustamante'>
-          <!-- Modal Text -->
-        <p>Since I was a Little boy I've always been interested in electronics and computers. I loved playing Oregon Trail on my Apple 2. I also worked at Proteva computer company in the 90's building hardware. Now that I'm an adult I've been pursuing my career in acting and software development. I've been married for the past three years. I'm also a father of a 18 month old boy. Front End Software development is defenitely a passion and skill that I will always carry with me for the rest of my life. </p>
-        </modal-dialog>
-          <!-- Email -->
-        <h4><a href="mailto:chrisbusta@hotmail.com">Email Chris</a></h4>
-          <!-- Github Account Info -->
-        <h4><a href="https://github.com/chrisbusta">Github Username</a></h4>
-          <!-- Github Logo -->
-        <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
-  </div>
-
+<div class="breakcontainer">
+  <hr />
+</div>
   </div>
 </div>

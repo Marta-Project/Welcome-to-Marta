@@ -191,26 +191,34 @@ nav {
 h1 {
   text-align: center; }
 
-.bobby {
+#about_page .headerContainer {
+  padding-right: 7px;
+  padding-left: 7px; }
+  #about_page .headerContainer .header {
+    text-align: center; }
+
+#about_page .bobby {
   display: inline;
-  float: left; }
+  float: left;
+  text-align: center; }
+  #about_page .bobby img {
+    width: 240px; }
+  #about_page .bobby h4 img {
+    width: 50px; }
 
-.bobby img {
-  width: 240px; }
+#about_page .breakcontainer {
+  padding-right: 7px;
+  padding-left: 7px; }
 
-.bobby h4 img {
-  width: 50px; }
+#about_page .chris {
+  float: left;
+  text-align: center; }
+  #about_page .chris img {
+    width: 160px; }
+  #about_page .chris h4 img {
+    width: 50px; }
 
-.chris {
-  margin-left: 650px; }
-
-.chris img {
-  width: 160px; }
-
-.chris h4 img {
-  width: 50px; }
-
-p {
+#about_page p {
   font-size: 30px; }
 
 .phonePic h4 {
@@ -241,29 +249,30 @@ button.BPbut {
   padding-left: 50px;
   padding-right: 50px; }
 
-#login_container h1 {
-  text-align: center;
-  font-size: 2em; }
-
-#login_container form {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-  #login_container form .input1 {
-    height: 25px;
-    width: 300px;
-    display: inline;
-    margin: 20px; }
-  #login_container form .input2 {
-    height: 25px;
-    width: 300px;
-    display: inline;
-    margin: 20px; }
-  #login_container form .LGbutton {
-    clear: both;
-    display: inline-block;
-    width: 300px;
-    margin: 0 20px 20px 20px; }
+#login_container {
+  height: 450px; }
+  #login_container h1 {
+    text-align: center;
+    font-size: 2em; }
+  #login_container form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    #login_container form .input1 {
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px; }
+    #login_container form .input2 {
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px; }
+    #login_container form .LGbutton {
+      clear: both;
+      display: inline-block;
+      width: 300px;
+      margin: 0 20px 20px 20px; }
 
 #registration_page {
   height: 450px; }
@@ -288,6 +297,3 @@ button.BPbut {
     clear: both;
     color: #F6F6F6;
     background-color: #1D6FB1; }
-
-#login_container {
-  height: 450px; }
