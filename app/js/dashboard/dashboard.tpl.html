@@ -5,26 +5,20 @@
   <!-- <h2>{{ ObjectID }}</h2> -->
 <button ng-click="logout();" class="logoutBtn">Logout</button>
 
-
-
   <!-- Left Page Content -->
-  <div class="DBtrips"> <!-- Block for Favorite Stations -->
-
+  <div class="DBtrips">
+    <!-- Block for Favorite Stations -->
     <h3 class="DByourTrips">Favorite Station:</h3>
-    <hr />
-
-      <div class="DBTripContent">
-
+      <hr />
+    <div class="DBTripContent">
       <ol>
-        <li ng-repeat="user in favoriteStations"> {{ user.favoriteStation }}</li>
+       <li ng-repeat="user in favoriteStations"> {{ user.favoriteStation }}</li>
       </ol>
-
-      </div>
-      <br><br>
-
-  <!-- Refresh Button -->
-  <button ng-click="DBrefresh();">Refresh Favorite Station</button>
-  <br><br>
+    </div>
+    <br><br>
+    <!-- Refresh Button -->
+    <button ng-click="DBrefresh();">Refresh Favorite Station</button>
+    <br><br>
   </div>
 
 
