@@ -1,12 +1,10 @@
 <div id="dashboard_page">
-
-<div ng-controller="Dashboard" class="header">
-
+  <!-- Heading -->
   <h1>Welcome {{ userName }}</h1>
   <!-- <h2> {{ sesh }}</h2> -->
   <!-- <h2>{{ ObjectID }}</h2> -->
 <button ng-click="logout();" class="logoutBtn">Logout</button>
-</div>
+
 
 
   <!-- Left Page Content -->
@@ -22,9 +20,11 @@
       </ol>
 
       </div>
+      <br><br>
 
   <!-- Refresh Button -->
   <button ng-click="DBrefresh();">Refresh Favorite Station</button>
+  <br><br>
   </div>
 
 

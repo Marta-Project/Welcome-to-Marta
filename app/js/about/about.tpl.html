@@ -1,8 +1,8 @@
 <div id="about_page">
-<center>
+
 <!-- Set Controller -->
 
-<div ng-controller="About" class="aboutContainer">
+<!-- <div ng-controller="About" class="aboutContainer"> -->
 
 <div class="headerContainer">
   <h2 class="header">About the Creator</h2>
@@ -13,6 +13,7 @@
   <!-- Image Source -->
     <img src="images/Bio Pic.jpg" class='APimg1'>
     <!-- Start of Modal Initiation -->
+    <br><br>
       <button ng-click='toggleModal()'>Read More</button>
         <!-- Modal HTML Setup -->
           <modal-dialog show='dialogShown'  width='750px' height='60%' dialog-title='Bobby Fine'>
@@ -20,13 +21,17 @@
               <p class="modalTextB">I am 22 years old, and from Atlanta. I have 3 older sisters and 2 older brothers. I have always been drawn towards computers, and understanding how and why they work the way that they do. I enjoy traveling, whether from state to state, country to country, or even if it is just down the street, which is one of the major reasons I saw it neccessary to create an app that can properly utitlize the public transit systems. </p>
           </modal-dialog>
             <!-- Email -->
-          <h4><a href="mailto:robertfine4631@icloud.com">Email Bobby</a></h4>
+            <br><br>
+            <form method="post" action="mailto:robertfine4631@icloud.com" class="ABf1">
+              <input class="APinput1" type="submit" value="Email Bobby">
+            </form>
+            <br><br>
             <!-- Github Account Info -->
-          <h4><a href="https://github.com/robertfine4631">Github Username</a></h4>
-            <!-- Github Logo -->
-          <h4><a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a></h4>
-  </div>
+          <a href="https://github.com/robertfine4631"><button>Bobby's Github</button></a>
 
+          <br><br>
+            <!-- Github Logo -->
+          <a href="https://github.com"><img src="images/Octicons-mark-github.svg.png" ></a>
   </div>
-  </center>
+  </div>
 </div>

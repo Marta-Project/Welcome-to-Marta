@@ -13,8 +13,10 @@ footer {
   footer img {
     width: 100%; }
 
-#dashboard_page .header {
+#dashboard_page {
   text-align: center; }
+  #dashboard_page .header {
+    text-align: center; }
 
 .DBNewTrips {
   border: 1px solid black;
@@ -45,8 +47,10 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 25px; }
-  .DBtrips .DBTripContent ol li {
-    list-style: none; }
+  .DBtrips .DBTripContent ol {
+    padding: 0; }
+    .DBtrips .DBTripContent ol li {
+      list-style: none; }
 
 #trains_page {
   margin-right: auto;
@@ -191,21 +195,18 @@ nav {
 h1 {
   text-align: center; }
 
-#about_page .headerContainer {
-  padding-right: 7px;
-  padding-left: 7px; }
-  #about_page .headerContainer .header {
-    text-align: center; }
-
-#about_page .bobby {
-  display: inline;
-  float: left;
-  text-align: center;
-  border: 1px solid black; }
-  #about_page .bobby img {
-    width: 240px; }
-  #about_page .bobby h4 img {
-    width: 50px; }
+#about_page {
+  text-align: center; }
+  #about_page .headerContainer {
+    padding-right: 7px;
+    padding-left: 7px; }
+  #about_page .bobby .APimg1 {
+    width: 250px; }
+  #about_page .bobby button {
+    border-radius: 5px; }
+  #about_page .bobby a img {
+    width: 60px;
+    height: 60px; }
 
 #contact_page {
   text-align: center; }

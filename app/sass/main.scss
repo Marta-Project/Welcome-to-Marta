@@ -29,6 +29,7 @@ footer {
 }
 
 #dashboard_page {
+  text-align: center;
   .header {
     text-align: center;
 
@@ -73,6 +74,7 @@ footer {
 
   .DBTripContent {
     ol {
+      padding: 0;
       li {
         list-style: none;
       }
@@ -287,37 +289,26 @@ h1 {
 
 //About Page Style
 #about_page {
-
-  .headerContainer {
-  }
+  text-align: center;
 
   .headerContainer {
     padding-right: 7px;
     padding-left: 7px;
-
-  .header {
-    text-align: center;
-  }
-  }
-.bobby {
-  display: inline;
-  float: left;
-  text-align: center;
-  border: 1px solid black;
-
-
-
-  .modalTextB {
-
   }
 
-  img {
-  width: 240px;
-   }
+  .bobby {
+    .APimg1 {
+      width: 250px;
+    }
+    button {
+      border-radius: 5px;
+    }
+    a img {
+      width: 60px;
+      height: 60px;
+    }
 
-  h4 img {
-  width: 50px; }
-}
+  }
 }
 
 //Contact Style
