@@ -289,6 +289,9 @@ h1 {
 #about_page {
 
   .headerContainer {
+  }
+
+  .headerContainer {
     padding-right: 7px;
     padding-left: 7px;
 
@@ -300,6 +303,12 @@ h1 {
   display: inline;
   float: left;
   text-align: center;
+
+
+  .modalTextB {
+
+  }
+
   img {
   width: 240px; }
 
@@ -307,10 +316,9 @@ h1 {
   width: 50px; }
 }
 
-.breakcontainer {
-  padding-right: 7px;
-  padding-left: 7px;
-}
+
+
+
 
 .chris {
   float: left;
