@@ -4,18 +4,18 @@
 
 
 
- <h1 class='TPh1'>Which Bus would you like to board?</h1>
+ <h2 class='TPh1'>Which Bus would you like to board?</h1>
 
  <div class="busTBL1">
-  <!-- Route Finder -->
+  <!-- Location Finder -->
   <label>Search by Location: <input ng-model="searchText" placeholder="Search by Location"></label>
   <!-- Refresh Button -->
   <button ng-click="refresh()">Refresh</button><br>
-  <!-- Bus Info -->
     <div class="BusH">
-      <caption class="BusCap">Northbound Buses</caption>
+      <p class="BusCap">Northbound Buses</p>
       <hr />
     </div>
+  <!-- Bus Info -->
     <table class="busTable">
       <tr>
         <th>Current Location</th>
@@ -39,7 +39,7 @@
       <label>Search by Location: <input ng-model="searchText2" placeholder="Search by Location"></label><br>
     <!-- Table Start -->
     <div class="BusH">
-      <caption class="BusCap">Southbound Buses</caption>
+      <p class="BusCap">Southbound Buses</p>
       <hr />
     </div>
     <table>

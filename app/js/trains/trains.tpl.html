@@ -1,14 +1,20 @@
 
 <div id="trains_page" ng-controller="Trains">
 
-    <h2>Which Train Would You Like To Board?</h2>
+    <h2 class="TPH1">Which Train Would You Like To Board?</h2>
 
     <!-- Table 1 -->
         <div class="trainTBL1">
+        <!-- Station Search -->
           <label>Search by Station: <input ng-model="searchText" placeholder="Enter Station Name"></label>
+          <!-- Force Refresh Button -->
           <button ng-click="refresh()">Refresh</button><br>
+            <div class="TrainH">
+              <p class="TrainCap">Northbound Trains</p>
+              <hr />
+            </div>
+          <!-- Northbound Train Information Table -->
               <table class="trainTable">
-              <caption>Northbound Trains</caption>
                 <tr>
                   <th>Current Station</th>
                   <th>Next Arrival</th>
@@ -29,10 +35,15 @@
 
         <!-- Table 2 -->
         <div class="trainTBL2">
-        <label>Search by Station: <input ng-model="searchText2" placeholder="Enter Station Name"></label><br>
-
+        <!-- Station Search -->
+        <label>Search by Station: <input ng-model="searchText2" placeholder="Enter Station Name"></label>
+        <br>
+          <div class="TrainH">
+            <p class="TrainCap">Southbound Trains</p>
+            <hr />
+          </div>
+          <!-- Southbound Train Information -->
           <table>
-          <caption>Southbound Trains</caption>
             <tr>
               <th>Current Station</th>
               <th>Next Arrival</th>

@@ -59,12 +59,27 @@ footer {
     margin: 0; }
   #trains_page .trainTBL1 {
     display: inline;
-    float: left; }
+    float: left;
+    margin-bottom: 50px; }
+    #trains_page .trainTBL1 .TrainH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center; }
+      #trains_page .trainTBL1 .TrainH .TrainCap {
+        font-weight: 800;
+        font-size: 1em; }
   #trains_page .trainTBL2 {
     display: inline;
     float: left;
     margin-top: -54px;
     margin-left: auto; }
+    #trains_page .trainTBL2 .TrainH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center; }
+      #trains_page .trainTBL2 .TrainH .TrainCap {
+        font-weight: 800;
+        font-size: 1em; }
   #trains_page label {
     display: inline; }
   #trains_page table {
@@ -100,7 +115,8 @@ footer {
     padding-right: 7px;
     text-align: center; }
     #bus_page .busTBL1 .BusH .BusCap {
-      font-weight: 800; }
+      font-weight: 800;
+      font-size: 1em; }
 
 #bus_page .busTBL2 {
   display: inline;
@@ -111,6 +127,9 @@ footer {
     padding-right: 7px;
     padding-left: 7px;
     text-align: center; }
+    #bus_page .busTBL2 .BusH .BusCap {
+      font-weight: 800;
+      font-size: 1em; }
 
 #bus_page label {
   display: inline; }

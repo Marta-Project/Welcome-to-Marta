@@ -96,12 +96,35 @@ footer {
   .trainTBL1 {
     display: inline;
     float: left;
+    margin-bottom: 50px;
+
+    .TrainH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center;
+
+      .TrainCap {
+        font-weight: 800;
+        font-size: 1em;
+      }
+    }
   }
   .trainTBL2 {
     display: inline;
     float: left;
     margin-top: -54px;
     margin-left: auto;
+
+    .TrainH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center;
+
+      .TrainCap {
+        font-weight: 800;
+        font-size: 1em;
+      }
+    }
   }
   label {
     display: inline;
@@ -157,6 +180,7 @@ footer {
 
       .BusCap {
         font-weight: 800;
+        font-size: 1em;
       }
     }
 
@@ -171,6 +195,11 @@ footer {
       padding-right: 7px;
       padding-left: 7px;
       text-align: center;
+
+      .BusCap {
+        font-weight: 800;
+        font-size: 1em;
+      }
     }
   }
   label {
