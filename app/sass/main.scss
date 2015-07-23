@@ -148,6 +148,13 @@ footer {
  .busTBL1 {
     display: inline;
     float: left;
+    margin-bottom: 50px;
+
+    .BusH {
+      padding-right: 7px;
+      padding-right: 7px;
+      text-align: center;
+    }
 
   }
   .busTBL2 {
@@ -155,6 +162,12 @@ footer {
     float: left;
     margin-top: -54px;
     margin-left: auto;
+
+    .BusH {
+      padding-right: 7px;
+      padding-left: 7px;
+      text-align: center;
+    }
   }
   label {
     display: inline;

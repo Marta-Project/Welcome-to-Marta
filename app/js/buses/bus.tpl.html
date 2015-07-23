@@ -8,16 +8,18 @@
 
  <div class="busTBL1">
   <!-- Route Finder -->
-  <label>Search by Location: <input ng-model="searchText" placeholder="Search by Route"></label>
+  <label>Search by Location: <input ng-model="searchText" placeholder="Search by Location"></label>
   <!-- Refresh Button -->
   <button ng-click="refresh()">Refresh</button><br>
   <!-- Bus Info -->
+    <div class="BusH">
+      <caption class="BusCap">Northbound Buses</caption>
+      <hr />
+    </div>
     <table class="busTable">
-    <caption>Northbound Buses</caption>
       <tr>
         <th>Current Location</th>
-        <th>Adherence</th>
-        <th>Vehicle Number</th>
+        <th>Variance to Schedule<br>Positive = Early<br>Negative = Late</th>
         <th>Route</th>
         <th>Direction</th>
       </tr>
@@ -25,7 +27,6 @@
       <tr ng-repeat="bus in northBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText">
         <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }} mins</td>
-        <td class="vehicle">{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
         </tr>
@@ -35,14 +36,16 @@
     <!-- Bus Info -->
     <div class="busTBL2">
     <!-- Label Start -->
-      <label>Search by Location: <input ng-model="searchText2" placeholder="Search by Route"></label><br>
+      <label>Search by Location: <input ng-model="searchText2" placeholder="Search by Location"></label><br>
     <!-- Table Start -->
+    <div class="BusH">
+      <caption class="BusCap">Southbound Buses</caption>
+      <hr />
+    </div>
     <table>
-    <caption>Southbound Buses</caption>
       <tr>
         <th>Current Location</th>
-        <th>Adherence</th>
-        <th>Vehicle Number</th>
+        <th>Variance to Schedule<br>Positive = Early<br>Negative = Late</th>
         <th>Route</th>
         <th>Direction</th>
       </tr>
@@ -50,7 +53,6 @@
       <tr ng-repeat="bus in southBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText2" >
         <td class="location">{{ bus.TIMEPOINT }}</td>
         <td>{{ bus.ADHERENCE }} mins</td>
-        <td>{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
       </tr>

@@ -93,13 +93,22 @@ footer {
 
 #bus_page .busTBL1 {
   display: inline;
-  float: left; }
+  float: left;
+  margin-bottom: 50px; }
+  #bus_page .busTBL1 .BusH {
+    padding-right: 7px;
+    padding-right: 7px;
+    text-align: center; }
 
 #bus_page .busTBL2 {
   display: inline;
   float: left;
   margin-top: -54px;
   margin-left: auto; }
+  #bus_page .busTBL2 .BusH {
+    padding-right: 7px;
+    padding-left: 7px;
+    text-align: center; }
 
 #bus_page label {
   display: inline; }
