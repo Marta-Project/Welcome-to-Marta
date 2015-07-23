@@ -99,6 +99,8 @@ footer {
     padding-right: 7px;
     padding-right: 7px;
     text-align: center; }
+    #bus_page .busTBL1 .BusH .BusCap {
+      font-weight: 800; }
 
 #bus_page .busTBL2 {
   display: inline;
