@@ -16,7 +16,7 @@
     <caption>Northbound Buses</caption>
       <tr>
         <th>Current Location</th>
-        <th>Next Arrival</th>
+        <th>Adherence</th>
         <th>Vehicle Number</th>
         <th>Route</th>
         <th>Direction</th>
@@ -24,7 +24,7 @@
       <!-- Bus Realtime Data -->
       <tr ng-repeat="bus in northBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText">
         <td class="location">{{ bus.TIMEPOINT }}</td>
-        <td>{{ bus.ADHERENCE }}</td>
+        <td>{{ bus.ADHERENCE }} mins</td>
         <td class="vehicle">{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
@@ -41,7 +41,7 @@
     <caption>Southbound Buses</caption>
       <tr>
         <th>Current Location</th>
-        <th>Next Arrival</th>
+        <th>Adherence</th>
         <th>Vehicle Number</th>
         <th>Route</th>
         <th>Direction</th>
@@ -49,7 +49,7 @@
       <!-- Bus Realtime Data -->
       <tr ng-repeat="bus in southBus| orderBy: ['ROUTE', 'TIMEPOINT'] | filter: searchText2" >
         <td class="location">{{ bus.TIMEPOINT }}</td>
-        <td>{{ bus.ADHERENCE }}</td>
+        <td>{{ bus.ADHERENCE }} mins</td>
         <td>{{ bus.VEHICLE }}</td>
         <td>{{ bus.ROUTE }}</td>
         <td>{{ bus.DIRECTION }}</td>
