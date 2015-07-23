@@ -303,6 +303,8 @@ h1 {
   display: inline;
   float: left;
   text-align: center;
+  border: 1px solid black;
+
 
 
   .modalTextB {
@@ -310,68 +312,16 @@ h1 {
   }
 
   img {
-  width: 240px; }
+  width: 240px;
+   }
 
   h4 img {
   width: 50px; }
 }
-
-
-
-
-
-.chris {
-  float: left;
-  text-align: center;
-
-img {
-  width: 160px; }
-
-h4 img {
-  width: 50px; }
-}
-p {
-  font-size: 30px;
-}
-
 }
 
 //Contact Style
-.phonePic h4 {
-  float: right;
-  margin-top: -200px;
-  margin-right: 192px; }
 
-.phonePic img {
-  float: right; }
-
-button.BPbut {
-  width: 100px;
-  height: 60px; }
-
-
- .CPh1 input {
-  width: 300px;
-  height: 300px;
-
-
-}
-
-button.BPbut {
-   width: 100px;
-   height: 60px;
-
-}
-
-.APimg1 {
-  width: 100%;
-  margin-top: 20px;
-}
-
-#contact_page {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
 //Login Style
 

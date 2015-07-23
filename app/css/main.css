@@ -200,50 +200,12 @@ h1 {
 #about_page .bobby {
   display: inline;
   float: left;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid black; }
   #about_page .bobby img {
     width: 240px; }
   #about_page .bobby h4 img {
     width: 50px; }
-
-#about_page .chris {
-  float: left;
-  text-align: center; }
-  #about_page .chris img {
-    width: 160px; }
-  #about_page .chris h4 img {
-    width: 50px; }
-
-#about_page p {
-  font-size: 30px; }
-
-.phonePic h4 {
-  float: right;
-  margin-top: -200px;
-  margin-right: 192px; }
-
-.phonePic img {
-  float: right; }
-
-button.BPbut {
-  width: 100px;
-  height: 60px; }
-
-.CPh1 input {
-  width: 300px;
-  height: 300px; }
-
-button.BPbut {
-  width: 100px;
-  height: 60px; }
-
-.APimg1 {
-  width: 100%;
-  margin-top: 20px; }
-
-#contact_page {
-  padding-left: 50px;
-  padding-right: 50px; }
 
 #login_container {
   height: 450px; }
