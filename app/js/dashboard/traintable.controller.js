@@ -28,5 +28,8 @@
         .error (function (err){
             console.error(err);
           });
+
+        //Do nothing under this line
       }
+      ]);
 }());
