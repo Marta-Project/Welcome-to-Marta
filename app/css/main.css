@@ -240,25 +240,14 @@ nav {
       color: #282828; }
 
 #registration_page {
-  height: 450px; }
+  text-align: center; }
   #registration_page h1 {
-    text-align: center;
-    font-size: 2em; }
+    text-align: center; }
   #registration_page form {
-    text-align: justify; }
+    min-width: 300px; }
     #registration_page form input {
-      width: 150px;
-      height: 25px;
-      margin-top: 10px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 175px;
+      margin: 10px 5px; }
+    #registration_page form button {
+      clear: both;
       border-radius: 5px; }
-  #registration_page .RPEmail:valid {
-    background-color: #6DE7A3; }
-  #registration_page .RPEmail:invalid {
-    background-color: #E95151; }
-  #registration_page .RPSub {
-    display: block;
-    clear: both;
-    color: #F6F6F6;
-    background-color: #1D6FB1; }

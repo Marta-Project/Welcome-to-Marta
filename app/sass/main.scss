@@ -380,38 +380,19 @@ header {
 //Registration Style
 
 #registration_page {
-
-  height: 450px;
-
+  text-align: center;
   h1 {
     text-align: center;
-    font-size: 2em;
   }
-
-form {
-  text-align: justify;
-
-  input {
-    width: 150px;
-    height: 25px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
+  form {
+    min-width: 300px;
+    input {
+      width: 175px;
+      margin: 10px 5px;
+    }
+    button {
+      clear: both;
+      border-radius: 5px;
+    }
   }
-}
-  .RPEmail:valid {
-    background-color: $valid;
-  }
-  .RPEmail:invalid {
-    background-color: $invalid;
-  }
-
-  .RPSub {
-    display: block;
-    clear: both;
-    color: $buttonColors;
-    background-color: $navBarColors;
-  }
-
 }
