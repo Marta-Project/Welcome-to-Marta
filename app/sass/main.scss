@@ -22,7 +22,7 @@ $navDiv: #E42840;
   header {
     background-color: $navBarColors;
     border-bottom: 2px solid $borderColor;
-    height: 100px;
+    height: 150px;
     nav {
       float: right;
       a {
@@ -38,6 +38,7 @@ $navDiv: #E42840;
           margin: 0;
           display: hidden;
           transition: width 2s ease;
+          position: relative;
           p {
             transform: rotate(85deg);
             padding: 10px;
@@ -48,6 +49,9 @@ $navDiv: #E42840;
           p {
             transform: rotate(0deg);
             transition-duration: 2000ms;
+          }
+          p:hover {
+            font-size: 2em;
           }
         }
       }
@@ -123,11 +127,13 @@ $navDiv: #E42840;
 #trains_page {
 
 text-align: center;
+
   .trainCont1 {
-    width: 320px;
+    max-width: 320px;
     float: left;
     margin-bottom: 70px;
     padding-right:30%;
+    padding-left: 10%;
 
         .TrainH {
           padding-right: 10%;

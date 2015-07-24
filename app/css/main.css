@@ -7,7 +7,7 @@ h1 {
 header {
   background-color: #1D6FB1;
   border-bottom: 2px solid #000000;
-  height: 100px; }
+  height: 150px; }
   header nav {
     float: right; }
     header nav a {
@@ -22,7 +22,8 @@ header {
         background-color: #E42840;
         margin: 0;
         display: hidden;
-        transition: width 2s ease; }
+        transition: width 2s ease;
+        position: relative; }
         header nav a div p {
           transform: rotate(85deg);
           padding: 10px; }
@@ -31,6 +32,8 @@ header {
         header nav a div:hover p {
           transform: rotate(0deg);
           transition-duration: 2000ms; }
+        header nav a div:hover p:hover {
+          font-size: 2em; }
     header nav a:visited {
       color: #ffffff; }
 
@@ -75,10 +78,11 @@ header {
 #trains_page {
   text-align: center; }
   #trains_page .trainCont1 {
-    width: 320px;
+    max-width: 320px;
     float: left;
     margin-bottom: 70px;
-    padding-right: 30%; }
+    padding-right: 30%;
+    padding-left: 10%; }
     #trains_page .trainCont1 .TrainH {
       padding-right: 10%;
       padding-left: 10%; }
