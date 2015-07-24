@@ -2,39 +2,48 @@
 <div id="trains_page" ng-controller="Trains">
 
     <h2 class="TPH1">Which Train Would You Like To Board?</h2>
+    <br><br>
 
     <!-- Table 1 -->
         <div class="trainTBL1">
+          <!-- Force Refresh Button -->
+          <label class="Refresh">Refresh Your Results:
+          <button ng-click="refresh()">Refresh</button><br>
+          <div class="trainCont1">
         <!-- Station Search -->
           <label>Search by Station: <input ng-model="searchText" placeholder="Enter Station Name"></label>
-          <!-- Force Refresh Button -->
-          <button ng-click="refresh()">Refresh</button><br>
-            <div class="TrainH">
-              <p class="TrainCap">Northbound Trains</p>
-              <hr />
+          </label>
+
+                <div class="TrainH">
+                  <p class="TrainCap">Northbound Trains</p>
+                  <hr />
+                </div>
+              <!-- Northbound Train Information Table -->
+                  <table class="trainTable">
+                    <tr>
+                      <th>Current Station</th>
+                      <th>Next Arrival</th>
+                      <th>Waiting Time</th>
+                      <th>Line</th>
+                      <th>Final Destination</th>
+                    </tr>
+                    <tr ng-repeat="train in northTrains | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText">
+                      <td class="station" style="border: 1px solid black">{{ train.STATION }}</td>
+                      <td style="border: 1px solid black">{{ train.NEXT_ARR }}</td>
+                      <td class="waiting" style="border: 1px solid black">{{ train.WAITING_TIME }}</td>
+                      <td style="border: 1px solid black">{{ train.LINE }}</td>
+                      <td style="border: 1px solid black">{{ train.DESTINATION }}</td>
+                      </tr>
+                  </table>
             </div>
-          <!-- Northbound Train Information Table -->
-              <table class="trainTable">
-                <tr>
-                  <th>Current Station</th>
-                  <th>Next Arrival</th>
-                  <th>Waiting Time</th>
-                  <th>Line</th>
-                  <th>Final Destination</th>
-                </tr>
-                <tr ng-repeat="train in northTrains | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText">
-                  <td class="station">{{ train.STATION }}</td>
-                  <td>{{ train.NEXT_ARR }}</td>
-                  <td class="waiting">{{ train.WAITING_TIME }}</td>
-                  <td>{{ train.LINE }}</td>
-                  <td>{{ train.DESTINATION }}</td>
-                  </tr>
-              </table>
-        </div>
+          </div>
         <br><br><br>
 
         <!-- Table 2 -->
+        <div class="trainCont2">
+
         <div class="trainTBL2">
+
         <!-- Station Search -->
         <label>Search by Station: <input ng-model="searchText2" placeholder="Enter Station Name"></label>
         <br>
@@ -52,13 +61,15 @@
               <th>Final Destination</th>
             </tr>
             <tr ng-repeat="train in southTrains | orderBy: ['STATION', 'NEXT_ARR'] | filter: searchText2" >
-              <td class="station">{{ train.STATION }}</td>
-              <td>{{ train.NEXT_ARR }}</td>
-              <td>{{ train.WAITING_TIME }}</td>
-              <td>{{ train.LINE }}</td>
-              <td>{{ train.DESTINATION }}</td>
+
+                      <td class="station" style="border: 1px solid black">{{ train.STATION }}</td>
+                      <td style="border: 1px solid black">{{ train.NEXT_ARR }}</td>
+                      <td class="waiting" style="border: 1px solid black">{{ train.WAITING_TIME }}</td>
+                      <td style="border: 1px solid black">{{ train.LINE }}</td>
+                      <td style="border: 1px solid black">{{ train.DESTINATION }}</td>
             </tr>
           </table>
+        </div>
         </div>
 </div>
 

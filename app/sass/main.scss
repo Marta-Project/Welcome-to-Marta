@@ -73,7 +73,6 @@ $navDiv: #E42840;
       width: 300px;
       padding-right: 7px;
       padding-left: 7px;
-      border: 1px solid $borderColor;
       display: inline-block;
       float: left;
 
@@ -97,7 +96,6 @@ $navDiv: #E42840;
       width: 300px;
       padding-right: 7px;
       padding-left: 7px;
-      border: 1px solid $borderColor;
       display: inline-block;
       float: right;
       margin-bottom: 15px;
@@ -123,77 +121,69 @@ $navDiv: #E42840;
 
 //Trains
 #trains_page {
-  margin-right: auto;
-  margin-left: auto;
-    h2 {
-      text-align: center;
-    }
-  .TPH1 {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
 
-  .trainTBL1 {
-    display: inline;
-    float: left;
-    margin-bottom: 50px;
+text-align: center;
+.trainCont1 {
+  width: 320px;
+  float: left;
+  margin-bottom: 70px;
+      .TrainH {
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+    .trainTBL1 {
+      display: inline;
+      label {
+        text-align: center;
+      }
 
-    .TrainH {
-      padding-right: 7px;
-      padding-left: 7px;
-      text-align: center;
-
-      .TrainCap {
-        font-weight: 800;
-        font-size: 1em;
+      .trainTable {
+        width: 320px;
+        display: inline;
+        border: 1px solid black;
       }
     }
-  }
-  .trainTBL2 {
-    display: inline;
-    float: left;
-    margin-top: -54px;
-    margin-left: auto;
-
-    .TrainH {
-      padding-right: 7px;
-      padding-left: 7px;
-      text-align: center;
-
-      .TrainCap {
-        font-weight: 800;
-        font-size: 1em;
-      }
-    }
-  }
-  label {
-    display: inline;
   }
 
   table {
-    display: inline;
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 4px;
-    font-size: .63em;
-    float: left;
-
+    font-size: .6em;
+    border: 1px solid black;
     th {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .station {
-      text-align: left;
-    }
-    .waiting {
-      text-align: right;
-    }
-    td {
-      text-align: center;
-      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
       border: 1px solid black;
-      background-color: $table;
+      tr {
+        border: 1px solid black;
+      }
+      .station {
+        border: 1px solid black;
+        text-align: left;
+      }
+      td {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid $borderColor;
+        background-color: $table;
+      }
+    }
+  }
+.trainCont2 {
+  width: 320px;
+  float: right;
+  margin-top: -54px;
+  label {
+    text-align: center;
+  }
+  .TrainH {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+    .trainTBL2 {
+      display: inline;
+      .TrainH {
+        padding-right: 10%;
+        padding-left: 10%;
+      }
     }
   }
 }
