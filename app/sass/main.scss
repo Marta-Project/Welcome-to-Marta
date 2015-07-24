@@ -1,7 +1,7 @@
 //Color Variables
 $background: #ffffff;
 $navBarColors: #1D6FB1;
-
+$visitedLink: #282828;
 $invalid: #E95151;
 $valid: #6DE7A3;
 $buttonColors:#F6F6F6;
@@ -12,6 +12,16 @@ $borderColor: #000000;
 //Global Elements
 body {
   min-width: 320px;
+}
+.container {
+  background-color: $background;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
 }
 //Dashboard
 #dashboard_page {
@@ -272,16 +282,6 @@ header {
   }
 
 
-.container {
-  background-color: $background;
-  text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
-  text-align: center;
-}
 
 //About Page Style
 #about_page {
@@ -349,13 +349,13 @@ h1 {
 
     .input1 {
       height: 25px;
-      width: 300px;
+      width: 225px;
       display: inline;
       margin: 20px;
     }
     .input2 {
       height: 25px;
-      width: 300px;
+      width: 225px;
       display: inline;
       margin: 20px;
     }
@@ -364,6 +364,15 @@ h1 {
       display: inline-block;
       width: 300px;
       margin: 0 20px 20px 20px;
+    }
+  }
+  h2 {
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    a:visited {
+      color: $visitedLink;
     }
   }
 }

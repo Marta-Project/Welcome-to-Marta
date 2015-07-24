@@ -1,6 +1,15 @@
 body {
   min-width: 320px; }
 
+.container {
+  background-color: #ffffff;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1 {
+  text-align: center; }
+
 #dashboard_page {
   text-align: center; }
   #dashboard_page .breakcontainer {
@@ -175,15 +184,6 @@ nav {
       nav ul li a:visited {
         color: #0BA9E0; }
 
-.container {
-  background-color: #ffffff;
-  text-align: justify;
-  margin-left: auto;
-  margin-right: auto; }
-
-h1 {
-  text-align: center; }
-
 #about_page {
   text-align: center; }
   #about_page .headerContainer {
@@ -219,12 +219,12 @@ h1 {
     margin-right: auto; }
     #login_container form .input1 {
       height: 25px;
-      width: 300px;
+      width: 225px;
       display: inline;
       margin: 20px; }
     #login_container form .input2 {
       height: 25px;
-      width: 300px;
+      width: 225px;
       display: inline;
       margin: 20px; }
     #login_container form .LGbutton {
@@ -232,6 +232,12 @@ h1 {
       display: inline-block;
       width: 300px;
       margin: 0 20px 20px 20px; }
+  #login_container h2 {
+    text-align: center; }
+    #login_container h2 a {
+      text-decoration: none; }
+    #login_container h2 a:visited {
+      color: #282828; }
 
 #registration_page {
   height: 450px; }
