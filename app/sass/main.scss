@@ -123,27 +123,29 @@ $navDiv: #E42840;
 #trains_page {
 
 text-align: center;
-.trainCont1 {
-  width: 320px;
-  float: left;
-  margin-bottom: 70px;
-      .TrainH {
-        padding-right: 10%;
-        padding-left: 10%;
-      }
-    .trainTBL1 {
-      display: inline;
-      label {
-        text-align: center;
-      }
+  .trainCont1 {
+    width: 320px;
+    float: left;
+    margin-bottom: 70px;
+    padding-right:30%;
 
-      .trainTable {
-        width: 320px;
+        .TrainH {
+          padding-right: 10%;
+          padding-left: 10%;
+        }
+      .trainTBL1 {
         display: inline;
-        border: 1px solid black;
+        label {
+          text-align: center;
+        }
+
+        .trainTable {
+          width: 320px;
+          display: inline;
+          border: 1px solid black;
+        }
       }
-    }
-  }
+   }
 
   table {
     font-size: .6em;
@@ -169,7 +171,7 @@ text-align: center;
   }
 .trainCont2 {
   width: 320px;
-  float: right;
+  float: left;
   margin-top: -54px;
   label {
     text-align: center;
